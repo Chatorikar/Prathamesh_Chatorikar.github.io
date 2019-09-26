@@ -1,0 +1,200 @@
+ 
+ @import url("../css/font.css");
+ 
+ 
+:root{
+    /* Theme font-family */
+    --Lobster:'Lobster',cursive;
+}
+
+ html,
+ body {
+     margin: 0%;
+     box-sizing: border-box;
+     overflow-x: hidden;
+ }
+ /* ------------------- GLobal Class------------------- */
+ 
+ a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+ }
+
+ .flex-row{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+ ul{
+     list-style: none;
+ }
+
+
+
+ h1{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size:2.5rem;
+ }
+
+
+ h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.3rem;
+}
+
+button.btn{
+     
+    border: none;
+    border-radius: 2rem;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+
+ /* -------------------NavBar ------------------- */
+ 
+
+
+ .nav {
+     background: rgb(0, 0, 0);
+     padding: 0 2rem;
+     height: 0rem;
+     min-height: 10vh;
+     overflow: hidden;
+     transition:height 0.5s ease-in-out;
+     z-index: -1;
+ }
+ 
+.nav .nav-menu{
+
+    justify-content: space-between;
+
+}
+
+
+.nav .toggle-collpase{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collpase .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collpase .toggle-icons i{
+    font-size: 1.4rem;
+    color: blue;
+}
+
+
+ .nav .nav-brand a {
+     margin-top: 0.3rem;
+     font-size: 1.6rem;
+     padding: 1rem 0;
+     text-decoration: none;
+     display: block;
+     font-family: 'Lobster',cursive;
+     letter-spacing: 0.3rem
+ }
+
+ .nav .nav-items{
+    list-style:none;
+    display: flex;
+    margin: 0;
+    
+ }
+
+ .nav .nav-items .nav-link{
+     padding: 1.6rem;
+     font-size: 1.5rem;
+     position: relative;
+     font-family: 'Courgette', cursive;
+     letter-spacing: 2px;
+ }
+
+ .nav .nav-items .nav-link:hover{
+     
+     
+    
+     background-color: rgb(111, 124, 199);
+     transition: 0.5s;
+    
+     
+ }
+
+ .nav .social{
+     padding: 1.4rem 0;
+     letter-spacing: 0.3rem;
+
+ }
+
+ .collapse{
+     height: 30rem;
+ }
+
+
+
+/* Main Content */
+
+
+main .site-title{
+    background: url("../assets/architecture-buildings-city-2989727.jpg");
+    background-size:contain;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+main .site-title h1 , h3{
+    margin: 0.3rem;
+    font-size: 2.8rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: rgb(209, 209, 209);
+    transition: 0.5s;
+  
+}
+
+
+main .site-title .btn:hover{
+ 
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(251, 251, 251);
+    width: 10rem;
+    
+}
+
+
+
+
+
+
+ /* Media Query */
+
+ @media only screen and (max-width:750px){
+    .nav .nav-menu , .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collpase{
+        display: initial;
+    }
+}
