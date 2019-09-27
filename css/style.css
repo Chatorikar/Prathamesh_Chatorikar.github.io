@@ -7,6 +7,10 @@
     --Lobster:'Lobster',cursive;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
  html,
  body {
      margin: 0%;
@@ -101,7 +105,8 @@ button.btn{
      padding: 1rem 0;
      text-decoration: none;
      display: block;
-     font-family: 'Lobster',cursive;
+     font-family: 'Lato', sans-serif;
+
      letter-spacing: 0.3rem
  }
 
@@ -116,7 +121,8 @@ button.btn{
      padding: 1.6rem;
      font-size: 1.5rem;
      position: relative;
-     font-family: 'Courgette', cursive;
+     font-family: 'Open Sans', sans-serif;
+
      letter-spacing: 2px;
      
  }
@@ -156,7 +162,7 @@ main .site-title{
     height: 110vh;
     display: flex;
     justify-content: center;
-    background-attachment: scroll;
+  
     background-repeat: no-repeat;
     z-index: -1;
     position: absolute;
@@ -176,7 +182,7 @@ main .site-title .site-background{
     padding-top: 10rem;
     text-align: center;
     color: white;
-    
+    margin: 200px;
     
 }
 
@@ -200,7 +206,8 @@ main .site-title .btn:hover{
     width: 10rem;
     background: transparent;
     color: white;
-    border: 1px solid rgb(251, 251, 251);
+    border: 2px solid rgb(251, 251, 251);
+    
    
     
 }
@@ -213,10 +220,32 @@ main .site-title .btn:hover{
  /* Media Query */
 
  @media only screen and (max-width:750px){
-    .nav .nav-menu , .nav-items{
+    .nav .nav-menu  .nav-items{
         flex-direction: column;
+       
+      
+       
+        
     }
-    .nav .toggle-collpase{
+    .nav{
+        background: rgb(0, 0, 0);
+    }
+   .nav .toggle-collpase {
         display: initial;
+        object-position: 020ex;
+      
     }
+   
+    main .site-title .site-background{
+       padding: 20px;
+        margin: 70px;
+      
+    }
+   
+    main .site-title{
+        background: cover;
+        position: relative;
+    }
+    
+  
 }
