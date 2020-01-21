@@ -103,12 +103,28 @@
             position: relative;
             z-index: 0;
         }
-
+        .jarallax > .jarallax-img {
+            position: absolute;
+            object-fit: cover !important;
+            /* support for plugin https://github.com/bfred-it/object-fit-images */
+            font-family: 'object-fit: cover;';
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
 
         .sec-1 {
             height: 100vh;
         }
 
+      
+         
+         #background {
+            position: absolute;
+       
+            z-index: -1;
+            overflow: hidden;
+         }
 
 
         .navbar{
@@ -178,12 +194,11 @@
 
 
         .intro{
-            position: fixed;
-            left: 35%;
+            position: absolute;
+            left: 15%;
             top: 26%;
             transform: translate(-50%, -10%);
             font-family: 'Poiret One', cursive;
-            z-index: 1 ;
            
         }
       
@@ -269,6 +284,10 @@
         h2{
             font-size: calc(36px + (55 - 36) * ((100vw - 320px) / (1600 - 320))) !important ;
         }
+
+        .sec-1{
+            height: 100vh;
+        }
       
 
 
@@ -296,7 +315,7 @@
             
             
             
-            <div class="row  intro text-light " >
+            <div class="row  intro text-light rellax " id="background" >
                 <div class="col">
                     <h6><span><b> Hello ! </b></span></h6>
                     <h2 class="mb-0">I Am Prathamesh</h2>
@@ -316,7 +335,10 @@
                 </div>
             </div>
         </div>
-        <section class="sec2">
+        <section class="sec-1">
+
+        </section>
+        <!-- <section class="sec2">
             <div class="row text-center">
                 <div class="col">
                         <h1>Swimming (sport)</h1>
@@ -533,7 +555,7 @@
                 </div>
          
             </div>
-        </section>
+        </section> -->
   
     </div>
 
@@ -578,11 +600,11 @@
           var scroll = $(window).scrollTop();
           $('nav').toggleClass('navbar-1',
            //add 'ok' class when div position match or exceeds else remove the 'ok' class.
-            scroll >= $('.sec2').offset().top
+            scroll >= $('.sec-1').offset().top
           );
           $('.container-fluid').toggleClass('padding',
           //add 'ok' class when div position match or exceeds else remove the 'ok' class.
-           scroll >= $('.sec2').offset().top
+           scroll >= $('.sec-1').offset().top
          );
       });
       //trigger the scroll
