@@ -103,17 +103,7 @@
             position: relative;
             z-index: 0;
         }
-        .jarallax > .jarallax-img {
-            position: absolute;
-            object-fit: scale-down !important;
-            /* support for plugin https://github.com/bfred-it/object-fit-images */
-            font-family: 'object-fit: cover;';
-            top: 0;
-            left: 0;
-            width: 10%;
-            height: 1%;
-            z-index: -1;
-        }
+
 
         .sec-1 {
             height: 100vh;
@@ -188,11 +178,12 @@
 
 
         .intro{
-            position: absolute;
-            left: 15%;
+            position: fixed;
+            left: 35%;
             top: 26%;
             transform: translate(-50%, -10%);
             font-family: 'Poiret One', cursive;
+            z-index: 1 ;
            
         }
       
@@ -305,7 +296,7 @@
             
             
             
-            <div class="row  intro text-light rellax" >
+            <div class="row  intro text-light " >
                 <div class="col">
                     <h6><span><b> Hello ! </b></span></h6>
                     <h2 class="mb-0">I Am Prathamesh</h2>
@@ -602,7 +593,7 @@
     <script>
             // Also can pass in optional settings block
             var rellax = new Rellax('.rellax', {
-              speed: -6,
+              speed: -5,
               center: false,
               wrapper: null,
               round: true,
