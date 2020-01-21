@@ -128,6 +128,22 @@
             height: 110vh;
         }
 
+        .jarallax {
+            position: relative;
+            z-index: 0;
+        }
+        .jarallax > .jarallax-img {
+            position: absolute;
+            object-fit: scale-down !important;
+            /* support for plugin https://github.com/bfred-it/object-fit-images */
+            font-family: 'object-fit: cover;';
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 1%;
+            z-index: -1;
+        }
+
         .sec-1 {
             height: 100vh;
         }
@@ -566,9 +582,14 @@
 
     </script>
     <script>
-            // Center all the things!
+            // Also can pass in optional settings block
             var rellax = new Rellax('.rellax', {
-              center: true
+              speed: -4,
+              center: false,
+              wrapper: null,
+              round: true,
+              vertical: true,
+              horizontal: false
             });
           </script>
 </body>
