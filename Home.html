@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Poiret+One|Rubik&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
         .container-fluid {
             margin: 0 auto;
@@ -174,9 +175,7 @@
                 
             }
 
-            .fa{
-                background-color:rgb(22, 20, 20) !important;
-            }
+          
 
         } 
     
@@ -211,7 +210,7 @@
             width: calc(20px + (38 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
         }
 
-        .fa {
+        .intro .fa {
             padding: calc(10px + (10 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
             font-size: calc(15px + (20 - 15) * ((100vw - 360px) / (1600 - 360))) !important;
             width: calc(39px + (44 - 39) * ((100vw - 360px) / (1600 - 360))) !important;
@@ -286,11 +285,139 @@
         }
 
         .sec-1{
+            margin-top: calc(36px + (95 - 36) * ((100vw - 320px) / (1600 - 320))) !important ;;
             height: 100vh;
         }
-      
+
+        .media img {
+            max-width: 100%;
+            width:25rem;
+            height: auto;
+            border-radius:5px !important;
+            border:1px solid #fff;
+          
+        }
+
+        .about h3 {
+            font-size: 30px;
+            color: #1461ff;
+            font-weight: 400;
+            margin: 40px 0 20px;
+            font-family: 'Raleway', sans-serif !important;
+        }
+        
+        .about h4 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 12px;
+            position: relative;
+            font-family: 'Raleway', sans-serif !important;
+            color: #222;
+    }
+
+   .about .me-line
+    {
+        background-color:#000 !important;
+        padding: 0 !important;
+        width: 88px; 
+        height: 2px;
+    }
+
+    .about p{
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+        word-wrap: break-word;
+        line-height: 26px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .about_details {
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+
+        margin-top: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .ct_about {
+        margin: 10px 0;
+    }
+
+    .info{
+        color:rgb(172, 169, 169);
+    }
+
+    .about_details span {
+        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+        
+        color: #222;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: inline-block;
+        width: 40%;
+    }
+
+    .ct_about span i {
+         margin-right: 5px;
+    }
 
 
+.btn {
+    display: inline-block;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    border: 1px solid transparent
+}
+
+.btn-round {
+    border-radius: 4px !important
+}
+
+.btn i {
+    margin-right: 12px
+}
+
+.btn.btn-large i {
+    font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+}
+
+
+
+.btn.btn-large {
+    font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+ 
+}
+
+.btn:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+
+
+.highlight-button {
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 4px 10px 5px;
+    font-size: 12px;
+    color: #000;
+    background-color: transparent
+}
+
+.highlight-button:hover {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff
+}
+
+.highlight-button i {
+    color: #000
+}
+
+.highlight-button:hover i {
+    color: #fff
+}
     </style>
 
 </head>
@@ -335,8 +462,63 @@
                 </div>
             </div>
         </div>
-        <section class="sec-1">
+        <section class="sec-1 about">
+           <div class="container container-sm-fluid">
+                <div class="row d-flex justify-content-center ">
+                        <div class="col-auto">
+                            <div class="media  flex-column flex-md-row ">
+                                <img class="align-self-center img-fluid"  src="https://i.imgur.com/2ZuKskJ.png" alt="DP">
+                                <div class="media-body ml-md-5 ">
+                                    <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
+                                    <hr class="my-0 me-line" align="left">
+                                    <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
+                                    <div class="about_details">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="ct_about">
+                                                       <span><i class="fa fa-map-marker"></i> Location : </span>
+                                                     <span class="info"> PICT Pune</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="ct_about">
+                                                       <span ><i class="fa fa-graduation-cap"></i> Education :</span>
+                                                       <span class="info">BE IT ( Pursuing )</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="ct_about">
+                                                       <span><i class="fa fa-phone"></i> Phone </span>
+                                                       <span class="info">+919595666570</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="ct_about">
+                                                       <span><i class="fa fa-envelope"></i> Email :</span>
+                                                       <span class="info">chatorikar001@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                        <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4" data-abc="true"><i class="fa fa-download"></i>Download CV</a> 
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-auto">
+        
+                        </div>
+                    
+                    </div>
+           </div>
         </section>
         <!-- <section class="sec2">
             <div class="row text-center">
