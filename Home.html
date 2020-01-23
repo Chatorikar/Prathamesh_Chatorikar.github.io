@@ -19,29 +19,31 @@
             font-size: 24px;
             padding: 0;
             width: 100%;
-           
+            transition: 0.5s;
+
         }
 
-      
+     
+
 
         body {
-         
+
             font-family: 'Rubik', sans-serif;
             height: 100%;
-          
+
         }
 
-        .padding{
+        .padding {
             padding: 15px !important;
         }
-        
+
 
         .homeLink {
             z-index: 1000;
             left: 0;
             top: 0;
-            width:calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320))) !important;
-            line-height:calc(25px + (40 - 25) * ((100vw - 360px) / (1600 - 360))) !important;
+            width: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320))) !important;
+            line-height: calc(25px + (40 - 25) * ((100vw - 360px) / (1600 - 360))) !important;
             background-color: #fff !important;
             color: #161616;
             font-weight: 700;
@@ -49,50 +51,51 @@
             font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 30))) !important;
             transition: 0.5s !important;
         }
-       
-        nav a{
+
+        nav a {
             text-decoration: none !important;
             color: #fff;
             font-weight: bold;
             font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
         }
-        nav  a:hover{
+
+        nav a:hover {
             color: currentColor;
         }
 
-        nav a.navbar-brand:hover{
+        nav a.navbar-brand:hover {
             color: #fff !important;
         }
 
-        .homeLink:hover{
+        .homeLink:hover {
             background-color: #000 !important;
             color: #fff !important;
         }
 
-        .name{
-          color: #fff !important;
+        .name {
+            color: #fff !important;
             font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
         }
-        
+
         nav {
-         
-           transition:0.5s;
+
+            transition: 0.5s;
             background-color: #fff !important;
-          }
-        
-        
-          .onscroll{
+        }
+
+
+        .onscroll {
             top: 4% !important;
-            padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320))) !important; 
-            padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320))) !important; 
-            
-          }
-          
-          .navbar{
-            top: 8% ;
-            padding-left: calc(55px + (90 - 55) * ((100vw - 320px) / (1600 - 320))) ; 
-            padding-right: calc(55px + (90 - 55) * ((100vw - 320px) / (1600 - 320))) ; 
-          }
+            padding-left: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
+            padding-right: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        }
+
+        .navbar {
+            top: 8%;
+            padding-left: calc(55px + (90 - 55) * ((100vw - 320px) / (1600 - 320)));
+            padding-right: calc(55px + (90 - 55) * ((100vw - 320px) / (1600 - 320)));
+        }
 
 
 
@@ -104,7 +107,8 @@
             position: relative;
             z-index: 0;
         }
-        .jarallax > .jarallax-img {
+
+        .jarallax>.jarallax-img {
             position: absolute;
             object-fit: cover !important;
             /* support for plugin https://github.com/bfred-it/object-fit-images */
@@ -118,96 +122,104 @@
             height: 100vh;
         }
 
-      
-         
-         #background {
+
+
+        #background {
             position: absolute;
-       
+
             z-index: -1;
             overflow: hidden;
-         }
+        }
 
 
-        .navbar{
-            background-color :transparent !important;
-        
-          }
-        
-          .navbar-1{
-            background-color :#000 !important;
+        .navbar {
+            background-color: transparent !important;
+
+        }
+
+        .navbar-1 {
+            background-color: #000 !important;
             padding: 15px 15px 15px 15px;
             top: 0% !important;
-        
-          }
-       
-          @media (max-width: 642px) {
+
+        }
+
+        @media (max-width: 642px) {
             .name {
-                display:none ;
+                display: none;
             }
-           
-            
-            .navbar{
-                top: 4% ;
-                z-index:2222;
+
+
+            .navbar {
+                top: 4%;
+                z-index: 2222;
                 padding: 1rem 3rem 1rem 3rem;
             }
-            
-            .onscroll{
-              top: 8% !important;
-              
+
+            .onscroll {
+                top: 4% !important;
+
             }
-            .navbar-1{
-              padding: 15px ;
-              margin-top: 2px;
-              top: 0% !important;
-              background-color :#000 !important;
-          
+
+            .navbar-1 {
+                padding: 15px;
+                margin-top: 2px;
+                top: 1% !important;
+                background-color: #000 !important;
+
             }
-       
+
         }
 
-        @media (max-width: 992px) { .rellax { transform: translate3d(0,0,0) !important; } }
+        @media (max-width: 992px) {
+            .rellax {
+                transform: translate3d(0, 0, 0) !important;
+            }
+        }
 
         @media screen and (max-width: 768px) {
-            .intro{
+            .intro {
                 top: 46% !important;
                 font-weight: 900;
-                
+
             }
 
-          
 
-        } 
-    
-        @media screen and (min-width: 768px) {
-          .navbar-1{
-            background-color :#000 !important;
-        
-          }
-    
+
         }
 
-        .jarallax{
+        @media screen and (min-width: 768px) {
+            .navbar-1 {
+                background-color: #000 !important;
+
+            }
+
+        }
+
+        .jarallax {
             z-index: 999 !important;
         }
 
 
-        .intro{
+        .intro {
             position: absolute;
             left: 15%;
             top: 26%;
             transform: translate(-50%, -10%);
             font-family: 'Poiret One', cursive;
-           
+
         }
-      
-  
-        .line
-        {
-            color:rgb(153, 153, 153) !important;
-            background-color:rgb(112, 110, 110) !important;
+
+        li {
+            list-style: none !important;
+        }
+
+
+        .line {
+            color: rgb(153, 153, 153) !important;
+            background-color: rgb(112, 110, 110) !important;
             padding: 0 !important;
-            width: calc(20px + (38 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
+            width: calc(20px + (38 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
         }
 
         .intro .fa {
@@ -220,85 +232,87 @@
             margin: 6px !important;
             opacity: 0.6;
         }
-       
-       
+
+
+
         a {
             text-decoration: none !important
         }
-       
+
         .fa-facebook {
             background: rgb(0, 0, 0);
             color: white;
-            border:2px solid #fff !important
+            border: 2px solid #fff !important
         }
 
-        .fa-facebook:hover{
+        .fa-facebook:hover {
             background: #fff !important;
             color: #000 !important;
-            border:2px solid #000 !important
+            border: 2px solid #000 !important
         }
 
-        .fa-linkedin:hover{
+        .fa-linkedin:hover {
             background: #fff !important;
             color: #000 !important;
-            border:2px solid #000 !important
+            border: 2px solid #000 !important
         }
 
-        .fa-github:hover{
+        .fa-github:hover {
             background: #fff !important;
             color: #000 !important;
-            border:2px solid #000 !important
+            border: 2px solid #000 !important
         }
-        .fa-twitter:hover{
+
+        .fa-twitter:hover {
             background: #fff !important;
             color: #000 !important;
-            border:2px solid #000 !important
+            border: 2px solid #000 !important
         }
-       
-   
-       
+
+
+
         .fa-twitter {
             background: rgb(0, 0, 0);
             color: white;
-            border:2px solid #fff !important
+            border: 2px solid #fff !important
         }
-       
+
         .fa-github {
             background: rgb(0, 0, 0);
             color: white;
-            border:2px solid #fff !important;
-            
+            border: 2px solid #fff !important;
+
         }
-       
+
         .fa-linkedin {
             background: rgb(0, 0, 0);
             color: white;
-            border:2px solid #fff !important
+            border: 2px solid #fff !important
         }
 
-        small{
-            font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important ;
+        small {
+            font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
-        h2{
-            font-size: calc(36px + (55 - 36) * ((100vw - 320px) / (1600 - 320))) !important ;
+        h2 {
+            font-size: calc(36px + (55 - 36) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
-        .sec-1{
-            margin-top: calc(36px + (95 - 36) * ((100vw - 320px) / (1600 - 320))) !important ;;
+        .sec-1 {
+            margin-top: calc(36px + (95 - 36) * ((100vw - 320px) / (1600 - 320))) !important;;
             height: 100vh;
         }
 
         .media img {
             max-width: 100%;
-            width:25rem;
+            width: 25rem;
             height: auto;
-            border-radius:5px !important;
-            border:1px solid #fff;
-          
+            border-radius: 5px !important;
+            border: 1px solid #fff;
+
         }
 
-        .mt-55{
+        .mt-55 {
             margin-top: 150px !important;
         }
 
@@ -309,7 +323,7 @@
             margin: 40px 0 20px;
             font-family: 'Raleway', sans-serif !important;
         }
-        
+
         .about h4 {
             font-size: 22px;
             font-weight: 700;
@@ -317,120 +331,125 @@
             position: relative;
             font-family: 'Raleway', sans-serif !important;
             color: #222;
-    }
+        }
 
-   .about .me-line
-    {
-        background-color:#000 !important;
-        padding: 0 !important;
-        width: 88px; 
-        height: 2px;
-    }
+        .display-none {
+            display: none;
+            transition: 0s !important;
+        }
 
-    .about p{
-        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
-        word-wrap: break-word;
-        line-height: 26px;
-        font-family: 'Open Sans', sans-serif;
-    }
+        .about .me-line {
+            background-color: #000 !important;
+            padding: 0 !important;
+            width: 98px;
+            height: 2px;
+        }
 
-    .about_details {
-        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
+        .about p {
+            font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+            word-wrap: break-word;
+            line-height: 26px;
+            font-family: 'Open Sans', sans-serif;
+        }
 
-        margin-top: 20px;
-        padding-bottom: 10px;
-    }
+        .about_details {
+            font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
 
-    .ct_about {
-        margin: 10px 0;
-    }
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
 
-    .info{
-        color:rgb(172, 169, 169);
-    }
+        .ct_about {
+            margin: 20px 10px 0px 10px;
+        }
 
-    .about_details span {
-        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
-        width: 43%;
-        color: #222;
-        font-weight: 500;
-        display: inline-block;
-    }
+        .info {
+            color: rgb(172, 169, 169);
+        }
 
-    .ct_about span i {
-         margin-right: 5px;
-    }
+        .about_details span {
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+            width: 43%;
+            color: #222;
+            font-weight: 500;
+            display: inline-block;
+        }
 
-
-.btn {
-    display: inline-block;
-    margin-right: 20px;
-    letter-spacing: 1px;
-    border: 1px solid transparent
-}
-
-.btn-round {
-    border-radius: 4px !important
-}
-
-.btn i {
-    margin-right: 12px
-}
-
-.btn.btn-large i {
-    font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
-}
+        .ct_about span i {
+            margin-right: 5px;
+        }
 
 
+        .btn {
+            display: inline-block;
+            margin-right: 20px;
+            letter-spacing: 1px;
+            border: 1px solid transparent
+        }
 
-.btn.btn-large {
-    font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important ;
- 
-}
+        .btn-round {
+            border-radius: 4px !important
+        }
 
-.btn:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0
-}
+        .btn i {
+            margin-right: 12px
+        }
+
+        .btn.btn-large i {
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+        }
 
 
 
-.highlight-button {
-    border: 2px solid #000;
-    display: inline-block;
-    padding: 4px 10px 5px;
-    font-size: 12px;
-    color: #000;
-    background-color: transparent
-}
+        .btn.btn-large {
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
 
-.highlight-button:hover {
-    background-color: #000;
-    border: 2px solid #000;
-    color: #fff
-}
+        }
 
-.highlight-button i {
-    color: #000
-}
+        .btn:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
 
-.highlight-button:hover i {
-    color: #fff
-}
+
+
+        .highlight-button {
+            border: 2px solid #000;
+            display: inline-block;
+            padding: 4px 10px 5px;
+            font-size: 12px;
+            color: #000;
+            background-color: transparent
+        }
+
+        .highlight-button:hover {
+            background-color: #000;
+            border: 2px solid #000;
+            color: #fff
+        }
+
+        .highlight-button i {
+            color: #000
+        }
+
+        .highlight-button:hover i {
+            color: #fff
+        }
     </style>
 
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/3VYsdRE.jpg" alt="" >
+        <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/3VYsdRE.jpg" alt="">
             <div class="row ">
                 <div class="col">
                     <header>
                         <nav class="navbar fixed-top  align-items-center  a">
-                            <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2">Prathamesh J. Chatorikar </span>
+                            <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span
+                                class="name ml-2">Prathamesh J. Chatorikar </span>
                             <div class="ml-auto align-self-center">
                                 <a class=" px-sm-4 px-2 cursor-pointer" href="#">Home </a>
                                 <a class=" px-sm-4 px-2 cursor-pointer" href="#">Work</a>
@@ -440,16 +459,16 @@
                     </header>
                 </div>
             </div>
-            
-            
-            
-            <div class="row  intro text-light rellax " id="background" >
+
+
+
+            <div class="row  intro text-light rellax " id="background">
                 <div class="col">
                     <h6><span><b> Hello ! </b></span></h6>
                     <h2 class="mb-0">I Am Prathamesh</h2>
                     <div class="row align-self-center no-gutters">
                         <div class="col align-self-center">
-                            <hr align="right"  class="line text-right">
+                            <hr align="right" class="line text-right">
                         </div>
                         <div class="col ml-2 align-self-center">
                             <small> Web Developer</small>
@@ -458,95 +477,88 @@
                 </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#"
+                                class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <section class="sec-1 about">
-           <div class="container-fluid ">
+        <section class="sec-1 about ">
+            <div class="container-fluid ">
                 <div class="row d-flex justify-content-center mt-55">
-                        <div class="col">
-                            <div class="media  flex-column flex-md-row ">
-                                <img class="align-self-center img-fluid"  src="https://i.imgur.com/2ZuKskJ.png" alt="DP">
-                                <div class="media-body ml-md-5 ">
-                                    <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
-                                    <hr class="my-0 me-line" align="left">
-                                    <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
-                                    <div class="about_details mt-2">
-                                        <div class="row">
-                                            <div class="col-md-6 col-12">
-                                                    <span><i class="fa fa-map-marker"></i> Location</span>
-                                                    <span class="info text-right">: PICT Pune</span>
-                                            </div>
-                                            <div class="col-md-6 col-12">
-                                                    <span><i class="fa fa-graduation-cap"></i> Education</span>
-                                                    <span class="info text-right">: BE IT ( Pursuing )</span>
-                                            </div>
-                                            <div class="col-md-6 col-12">
-                                                    <span><i class="fa fa-envelope"></i> Phone</span>
-                                                    <span class="info text-right">: 919595666570</span>
-                                            </div>
-                                            <div class="col-md-6 col-12">
-                                                    <span><i class="fa fa-phone"></i> Email</span>
-                                                    <span class="info text-right">: chatorikar001@gmail.com</span>
-                                            </div>
-                                        </div>   
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-<!--                                         
-                                        <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <div class="ct_about">
-                                                       <span><i class="fa fa-map-marker"></i> Location</span>
-                                                     <span class="info">: PICT Pune</span>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-6 col-12">
-                                                    <div class="ct_about">
-                                                       <span ><i class="fa fa-graduation-cap"></i> Education</span>
-                                                       <span class="info">: BE IT ( Pursuing )</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="ct_about">
-                                                        <span><i class="fa fa-phone"></i> Phone</span>
-                                                        <span class="info">: +919595666570</span>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-6 col-12">
-                                                    <div class="ct_about">
-                                                       <span><i class="fa fa-envelope"></i> Email</span>
-                                                       <span class="info">: chatorikar001@gmail.com</span>
-                                                    </div>
-                                                </div>
-                                                
-                                                <hr class="text-dark">
-                                                <div class="col-12">
-                                                        <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4" data-abc="true"><i class="fa fa-download"></i>Download CV</a> 
-                                                </div>
-                                            </div> -->
+                    <div class="col-xl-9 col-sm-12 ">
+                        <div class="media  flex-column flex-md-row ">
 
+                            <img class="align-self-center img-fluid" src="https://i.imgur.com/2ZuKskJ.png" alt="DP">
+                            <div class="media-body ml-lg-5 ">
+                                <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
+                                <hr class="my-0 me-line" align="left">
+                                <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus
+                                    ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum
+                                    posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst.
+                                    In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit
+                                    vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
+                                <div class="about_details mt-2">
+
+
+
+
+
+
+
+
+
+                                    <div class="row my-5">
+                                        <div class="col-lg-6 col-12">
+                                            <ul class="list-unstyled my-3 ">
+                                                <li>
+                                                    <div class="ct_about">
+                                                        <span><i class="fa fa-map-marker"></i> Location</span>
+                                                        <span class="info text-muted">: PICT Pune</span>
+                                                    </div>
+                                                </li>
+                                           
+                                                <li>
+                                                        <div class="ct_about">
+                                                            <span><i class="fa fa-graduation-cap"></i> Education</span>
+                                                            <span class="info text-muted">:BE IT </span>
+                                                        </div>
+                                                    </li>
+                                            </ul>
                                         </div>
-                                
+                                        <div class="col-lg-6 col-12">
+                                            <ul class="list-unstyled my-3">
+
+                                                    <li>
+                                                            <div class="ct_about">
+                                                                <span><i class="fa fa-phone"></i> Phone</span>
+                                                                <span class="info text-muted">:+919595666570</span>
+                                                            </div>
+                                                        </li>
+                                                <li>
+                                                    <div class="ct_about">
+                                                        <span><i class="fa fa-envelope"></i> Email</span>
+                                                        <span class="info text-muted">:chatorikar@gmail.com</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+
                                 </div>
+
                             </div>
-                            
                         </div>
-                        <div class="col-auto">
-        
-                        </div>
-                    
+
                     </div>
-           </div>
+                    <div class="col-auto">
+
+                    </div>
+
+                </div>
+            </div>
         </section>
         <!-- <section class="sec2">
             <div class="row text-center">
@@ -766,7 +778,7 @@
          
             </div>
         </section> -->
-  
+
     </div>
 
 
@@ -791,48 +803,60 @@
         });
     </script>
     <script type="text/javascript">
-        $(window).on('scroll',function(){
-          if($(window).scrollTop()){
-            $('.navbar').addClass('onscroll');
-          }
-          else{
-            $('.navbar').removeClass('onscroll');
-          }
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('.navbar').addClass('onscroll');
+            }
+            else {
+                $('.navbar').removeClass('onscroll');
+            }
         })
 
-        
-      </script>
-      <script>
-        $( document ).ready(function() {
-            $('html').css('overflow-x', 'initial');
-
-        $(window).scroll(function (event) {
-          var scroll = $(window).scrollTop();
-          $('nav').toggleClass('navbar-1',
-           //add 'ok' class when div position match or exceeds else remove the 'ok' class.
-            scroll >= $('.sec-1').offset().top
-          );
-          $('.container-fluid').toggleClass('padding',
-          //add 'ok' class when div position match or exceeds else remove the 'ok' class.
-           scroll >= $('.sec-1').offset().top
-         );
-      });
-      //trigger the scroll
-      $(window).scroll();
-    });
 
     </script>
     <script>
-            // Also can pass in optional settings block
-            var rellax = new Rellax('.rellax', {
-              speed: -5,
-              center: false,
-              wrapper: null,
-              round: true,
-              vertical: true,
-              horizontal: false
+        $(document).ready(function () {
+            $('html').css('overflow-x', 'initial');
+
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+
+                $('.container-fluid').toggleClass('padding',
+                    //add 'ok' class when div position match or exceeds else remove the 'ok' class.
+                    scroll >= $('.sec-1').offset().top
+                );
             });
-          </script>
+            //trigger the scroll
+            $(window).scroll();
+        });
+
+    </script>
+    <script>
+        // Also can pass in optional settings block
+        var rellax = new Rellax('.rellax', {
+            speed: -5,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var objectSelect = $(".intro");
+            var objectPosition = objectSelect.offset().top;
+            if (scroll > objectPosition) {
+                $("nav").addClass("navbar-1");
+
+            } else {
+                $("nav").removeClass("navbar-1");
+            }
+        });
+
+    </script>
 </body>
 
 </html>
