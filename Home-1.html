@@ -12,20 +12,24 @@
 
 
 
-    <title>Hello, world!</title>
+    <title>This is not your session to die</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Poiret+One|Rubik&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        
+        body{
+            font-family: 'Raleway', sans-serif !important;
+        }
 
-     
+
         .container-fluid {
             margin: 0 auto;
-            background: #f9f9f9;
             transition: 0.5s;
             padding: 0;
             overflow-x: hidden !important;
+            scroll-behavior: smooth;
 
         }
         .jarallax {
@@ -38,7 +42,7 @@
         .jarallax>.jarallax-img {
             position: absolute;
             object-fit: cover ;
-            background-size:contain !important;
+            background-size:cover !important;
             /* support for plugin https://github.com/bfred-it/object-fit-images */
             font-family: 'object-fit: cover;';
             top: 0;
@@ -75,8 +79,9 @@
             font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 30))) !important;
             transition: 0.5s !important;
         }
-
+     
         nav a {
+
             text-decoration: none !important;
             color: #fff;
             font-weight: bold;
@@ -138,7 +143,7 @@
 
         .services{
             height: 100vh;
-            background-color:blue;
+            background-color:rgb(255, 255, 255);
         }
 
 
@@ -149,6 +154,9 @@
             transform: translate(-20%, -10%);
             font-family: 'Poiret One', cursive;
             font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1600 - 320))) ;
+            z-index: -1 !important;
+
+
 
         }
 
@@ -244,7 +252,7 @@
 
 
         @media (max-width: 642px) {
-            .name {
+            .menu .name {
                 display: none;
             }
 
@@ -355,7 +363,13 @@
         }
 
         .mt-55 {
-            margin-top: 150px !important;
+            margin-top:calc(60px + (150 - 60) * ((100vw - 320px) / (1600 - 320))) !important; ;
+            margin-bottom:calc(40px + (150 - 40) * ((100vw - 320px) / (1600 - 320))) !important; 
+        }
+
+        .about-me{
+            z-index: 999 !important;
+
         }
 
         .about h3 {
@@ -417,16 +431,17 @@
             display: inline-block;
         }
 
-       .about-me .mt-55 {
-            margin-top: 150px !important;
-        }
-        
+  
         .about-me h3 {
             font-size: 30px;
             color: #1461ff;
             font-weight: 400;
             margin: 40px 0 20px;
             font-family: 'Raleway', sans-serif !important;
+        }
+
+        .about-me {
+            font-family: 'Raleway', sans-serif !important;            
         }
 
         .about-me .me-line {
@@ -437,16 +452,155 @@
         }
 
         .contact{
-            height: 20vh;
             background-color:#ccc;
+            align-items: center !important;
+            justify-content: center !important;
+
         }
 
         .display-4{
-            font-size: calc(25px + (62 - 25) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-size: calc(26px + (81 - 26) * ((100vw - 320px) / (1600 - 320))) !important;
+                    
+        }
+    
+
+
+        .contact .jarallax {
+            position: relative;
+            z-index: 0;
+            height:calc(130px + (233 - 130) * ((100vw - 320px) / (1600 - 320))) !important;
+            display: flex;
+            align-items: center;
+            justify-content: center !important;
+
+        }
+
+ 
+
+        .services h2{
+            font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-family: 'Raleway', sans-serif !important;
             
         }
 
-      
+        .services .badge{
+            border-radius: 5px ;
+            padding: 5px 6px;
+            font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+            background-color:#00ADEF;
+        }
+
+       
+        .services-line {
+            display: inline-block;
+        }
+
+        .services-line:after {
+            border-radius: 5px ;
+            content: '';
+            display: block;
+            border-top: 3px solid #000;
+            margin-top: 0.3em;
+            margin: 10px auto 1em;
+            width: 45%;
+            color:#202125 !important;
+        }
+
+        hr{
+            transition: 0.6s !important;
+        }
+
+        .services .heading-line{
+            
+            background-color: #00ADEF !important;
+            vertical-align: middle !important;
+            width: 58px !important;
+            height: 2px;
+        }
+
+  
+
+     
+
+        .services .card:hover{
+            background-color:#00ADEF !important;
+            color:#fff;
+        }
+
+        .services .card:hover .heading-line{
+            background-color: #fff !important;
+
+        }
+
+  
+
+        .services{
+            margin-top:calc(60px + (179 - 60) * ((100vw - 320px) / (1600 - 320))) !important; ;
+            margin-bottom:calc(40px + (200 - 40) * ((100vw - 320px) / (1600 - 320))) !important; 
+        }
+
+        .services .card img {
+            border: 9px solid white ;
+            margin-bottom:calc(0px + (16 - 0) * ((100vw - 320px) / (1600 - 320))) !important; 
+        }
+        
+        .services .outside {
+            position: inherit;
+            top: -50%
+        }
+        
+        .services .card {
+            border-radius: 0px !important;
+            box-shadow: 1px 1px 5px 0px rgb(88, 88, 90);
+            transition: 0.6s
+        }
+        
+        .services .card-header {
+            border-radius: 0px !important
+        }
+    
+        .services .bold {
+            font-weight: 500
+        }
+        
+        .services .profile-pic {
+            margin-bottom: -5px !important
+        }
+        
+        
+        .services .card-name {
+            margin-top: -50px !important;
+            
+        }
+
+        .services .card p{
+            font-family: 'Raleway', sans-serif !important;
+            word-break: break-all;   
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        }
+
+        .services .card{
+            margin-top: 100px !important;
+        }
+
+        @media (max-width: 880px){
+            .card-deck {
+                display: inline-block !important;
+                -ms-flex-flow: row wrap;
+                flex-flow: inherit;
+                margin-right: inherit;
+                margin-left: inherit;
+                width:calc(500px + (500 - 500) * ((100vw - 320px) / (1600 - 320))) !important; 
+                justify-content: center !important;
+                margin: 0 auto;
+            }
+    
+           
+        }
+        
+
+   
     </style>
 
 
@@ -455,15 +609,15 @@
 
 <body>
     <div class="container-fluid">
-        <section class="menu ">
+        <section class="menu " id="home">
             <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/3VYsdRE.jpg" alt="">
                 <header>
                     <nav class="navbar fixed-top">
                     <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light">Prathamesh J. Chatorikar </span>
                     <div class="ml-auto">
-                        <a class="px-sm-4 px-1 text-right navbar-brand" href="#">Home</a>
-                        <a class="px-sm-4 px-1 text-right navbar-brand" href="#">About</a>
-                        <a class="px-sm-4 px-1 text-right navbar-brand" href="#">Work</a>
+                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
+                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
+                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">Work</a>
                     </div>
                     </nav>
                 </header>
@@ -485,9 +639,9 @@
             </div>
         </section>
 
-        <section class="about-me px-3">
+        <section class="about-me px-3" id="about">
         <div class="row mt-55 d-flex justify-content-center">
-            <div class="col-xl-9 col-sm-12 ">
+            <div class="col-xl-8 col-lg-10 col-sm-12 ">
                     <div class="media  flex-column flex-md-row ">
                         <img class="align-self-center img-fluid" src="https://i.imgur.com/2ZuKskJ.png" alt="DP">
                         <div class="media-body ml-lg-5 ">
@@ -543,17 +697,87 @@
                 </div>
         </div>
         </section>
-        <section class="contact ">
-           <div class="row d-flex align-items-center ">
-               <div class="col my-auto  align-self-center">
-                    <h1 class="display-4 text-center">CONTACT +919595666570</h1>
-               </div>
-           </div>
-        </section>
+    <section class="contact bg-white">
+        <div class="row d-flex align-self-center justify-content-center text-center">
+            <div class="col ">
+                <div data-jarallax data-speed="0.2" class="jarallax">
+                    <img class="jarallax-img" src="https://i.imgur.com/jlZIImg.jpg">
+                    <h1 class="display-4 text-light number  my-auto">CONTACT <span><i class="fa fa-phone mr-md-5 mr-3"></i></span>9595666570</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services px-3 ">
+        <div class="row d-flex justify-content-center">
+            <div class="col text-center">
+                <span class="badge badge-pill badge-primary my-3">services</span><br>
+                <h2 class="services-line mx-auto ">What I Do</h2>
+            </div>
+        </div> 
+        <div class=" row mx-2">   
+            <div class="card-deck justify-content-center">
+                <div class=" card col-xl-3 col-12  text-center border-0 pb-4">
+                    <div class="row justify-content-center ">
+                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                    </div>
+                    <div class="row text-center card-name">
+                        <div class="col">
+                            <h5 class="mb-4 ">Responsive Layout</h5>
+                            <hr class="heading-line mb-4">
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center ">
+                            <div class="col px-xl-5 px-lg-3 px-2">
+                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" card col-xl-3 col-12  text-center border-0 pb-4">
+                    <div class="row justify-content-center ">
+                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                    </div>
+                    <div class="row text-center card-name">
+                        <div class="col">
+                            <h5 class="mb-4">Web Development</h5> 
+                            <hr class="heading-line mb-4">
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center ">
+                            <div class="col px-xl-5 px-lg-3 px-2">
+                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" card col-xl-3 col-12  text-center border-0 pb-4 pb-4">
+                    <div class="row justify-content-center ">
+                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                    </div>
+                    <div class="row text-center card-name">
+                        <div class="col">
+                            <h5 class="mb-4 ">Digital Marketing</h5> 
+                            <hr class="heading-line mb-4">
+                        </div>
+                    </div>
+                    <div class="card-body pt-0 text-center pb-3 ">
+                        <div class="row justify-content-center ">
+                            <div class="col px-xl-5 px-lg-3 px-2">
+                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
       
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
@@ -584,7 +808,17 @@
                     $("nav").removeClass("navbar-1");
                 }
             });
+
+
+            $(".navbar a").click(function(){
+                $("body,html").animate({
+                 scrollTop:$("#" + $(this).data('value')).offset().top-150
+                },1000)
+                
+               });
         });
+
+        
     
         </script>
 </body>
