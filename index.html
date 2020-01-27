@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/imageHover.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
@@ -35,7 +37,7 @@
         }
         .jarallax {
             position: relative;
-            z-index: 0;
+            z-index: 22;
             height: 100vh;
 
         }
@@ -144,11 +146,6 @@
 
         .services{
             background-color:rgb(255, 255, 255);
-            margin-bottom: 20vh;
-        }
-
-        #services{
-            height: 100vh;
         }
 
 
@@ -183,19 +180,19 @@
             text-decoration: none !important
         }
 
-        .fa-facebook {
+        .intro .fa-facebook {
             background: rgb(0, 0, 0);
             color: white;
             border: 2px solid #fff !important
         }
 
-        .fa-facebook:hover {
+        .intro .fa-facebook:hover {
             background: #fff !important;
             color: #000 !important;
             border: 2px solid #000 !important
         }
 
-        .fa-linkedin:hover {
+        .intro .fa-linkedin:hover {
             background: #fff !important;
             color: #000 !important;
             border: 2px solid #000 !important
@@ -207,7 +204,7 @@
             border: 2px solid #000 !important
         }
 
-        .fa-twitter:hover {
+        .intro .fa-twitter:hover {
             background: #fff !important;
             color: #000 !important;
             border: 2px solid #000 !important
@@ -215,7 +212,7 @@
 
 
 
-        .fa-twitter {
+        .intro .fa-twitter {
             background: rgb(0, 0, 0);
             color: white;
             border: 2px solid #fff !important
@@ -300,7 +297,7 @@
         }
 
 
-        .about-me .btn {
+       .btn {
             display: inline-block;
             margin-right: 20px;
             letter-spacing: 1px;
@@ -308,21 +305,21 @@
             border: 1px solid transparent
         }
 
-        .about-me .btn-round {
+        .btn-round {
             border-radius: 0px !important
         }
 
-        .about-me  .btn i {
+          .btn i {
             margin-right: 12px
         }
 
-        .about-me  .btn.btn-large i {
+          .btn.btn-large i {
             font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
 
 
-        .about-me  .btn.btn-large {
+          .btn.btn-large {
             font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
 
         }
@@ -336,7 +333,7 @@
 
 
 
-        .about-me  .highlight-button {
+         .highlight-button {
             border: 2px solid #000;
             display: inline-block;
             padding: 4px 10px 5px;
@@ -345,13 +342,13 @@
             background-color: transparent
         }
 
-        .about-me  .highlight-button:hover {
+          .highlight-button:hover {
             background-color: #000;
             border: 2px solid #000;
             color: #fff
         }
 
-        .about-me  .highlight-button i {
+          .highlight-button i {
             color: #000
         }
 
@@ -483,7 +480,7 @@
 
  
 
-        .services h2{
+         h2{
             font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1600 - 320))) !important;
             font-family: 'Raleway', sans-serif !important;
             
@@ -501,11 +498,25 @@
             display: inline-block;
         }
 
-        .services-line:after {
+         
+
+       .services .services-line:after {
             border-radius: 5px ;
             content: '';
             display: block;
             border-top: 3px solid #000;
+            margin-top: 0.3em;
+            margin: 10px auto 1em;
+            width: 45%;
+            color:#202125 !important;
+        }
+
+        
+        .work .services-line:after {
+            border-radius: 5px ;
+            content: '';
+            display: block;
+            border-top: 3px solid #fff;
             margin-top: 0.3em;
             margin: 10px auto 1em;
             width: 45%;
@@ -535,7 +546,7 @@
 
         .services .card:hover .heading-line{
             background-color: #fff !important;
-
+            width: 116px !important;
         }
 
   
@@ -626,6 +637,7 @@
         height: inherit;
     }
 
+
     
    
     .gallery-title:after {
@@ -638,10 +650,11 @@
     }
    
     .filter-button {
-        border: 1px solid #00ADEF ;
+        border: 1px solid #fff ;
         border-radius: 0px;
         border-right: none ;
-        border-left: none;
+        border-left: none ;
+        color:#fff ;
         text-align: center;
         margin-bottom: 30px;
         margin-right: calc(10px + (35 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
@@ -649,19 +662,22 @@
     }
 
     .btn-active{
-        background-color: #00ADEF ;
-        color: white
+        background-color: #fff ;
+        color: #000;
+        border: 1px solid #fff ;
+
     }
    
     .filter-button:hover {
         text-align: center;
-        background-color: #00ADEF !important;
-        color: white
+        background-color: #fff !important;
+        color: #000;
+
     }
    
     .btn-default:active .filter-button:active {
-        background-color: #00ADEF;
-        color: white
+        background-color: #fff;
+        color: #000
     }
    
     .port-image {
@@ -670,6 +686,10 @@
    
     .gallery_product {
         margin-bottom: 30px
+    }
+
+    .work{
+        color:#fff ;
     }
 
     .work h2{
@@ -686,9 +706,7 @@
     }
     
 
-    .work{
-        height: 150vh !important;
-    }
+ 
 
     .item,
     .item-hover,
@@ -696,8 +714,8 @@
     .item-img,
     .item-type-move .item-info {
         width: calc(250px + (400 - 250) * ((100vw - 320px) / (1600 - 320))) !important;;
-        height: 225px;
-        box-shadow: 1px 1px 5px 0px rgb(88, 88, 90);
+        height: calc(170px + (225 - 170) * ((100vw - 320px) / (1600 - 320))) !important;
+        box-shadow: 1px 2px 5px 2px rgb(44, 44, 44);
         margin: 0 auto;
     }
 
@@ -737,7 +755,6 @@
         color:#ffffff;
         position:relative;
         z-index:5;			
-        overflow:hidden;			
     }
 
     .item-type-move .item-info .headline,
@@ -783,33 +800,340 @@
     
     .item-type-move .item-hover:hover {
         opacity:1;
-        transition: 0.5s;																		
-
-        
     }			
     
   		
 
     .item-type-move .item-hover:hover .item-info .headline {
         top:35%;
+
     }				
 
     .item-type-move .item-hover:hover .item-info .date {
         bottom:35%;
     }
     
-
-            
+  
     .item-img {			
         z-index:0;			
     }
 
+    .work .jarallax {
+        height:auto;
+        z-index: 20;
+    }
+
+    .work .badge{
+        margin-top:5rem ;
+    }
+
+    .work .main-row{
+        margin-bottom:5rem ;
+    }
+
+    .work .pb-55{
+        padding-bottom:7vw !important;
+    }
+
+
+    .work .jarallax>.jarallax-img {
+        position: absolute;
+        object-fit: fill ;
+        background-size:cover !important;
+        /* support for plugin https://github.com/bfred-it/object-fit-images */
+        font-family: 'object-fit: cover;';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+
+    .services{
+        padding-bottom:15rem
+    }
+
+
+    .work .highlight-button {
+        border: 2px solid #fff;
+        display: inline-block;
+        padding: 17px 30px 17px !important;
+        color: #000;
+        border-radius:50px !important;
+        background-color: #fff !important;
+        box-shadow: 2px 3px 4px 3px rgb(54, 54, 54);
+
+    }
+
+    .work .fa {
+        margin-right: 0 !important;
+
+
+    }
+    .work .highlight-button:hover {
+        background-color: #000;
+        border: 2px solid #000;
+    }
+
+
+    .experience {
+        background-color:#ccc;
+    }
+
+    .experience .last{
+        padding-bottom: 10rem !important;
+    }
+
+
+    .experience .heading .badge{
+        margin-top:5rem ;
+    }
+
+    .experience .timeline {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .experience .timeline .badge-pill{
+        float: right;
+        vertical-align: middle !important;
+    }
+    
+    .experience .timeline:after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background: rgb(94, 93, 93);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    
+    .experience .container-1 {
+        width: 50%;
+        padding: 10px 30px;
+        position: relative;
+      
+    }
+    
+    .experience  .container-1:after {
+         content: " ";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #fff;
+        right: -12px;
+        border: 4px solid #ff9f55;
+        z-index: 9;
+        top: 15px;
+    }
+    
+    .experience  .content {
+        background: #fff;
+        padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320))) calc(14px + (38 - 14) * ((100vw - 320px) / (1600 - 320))) !important;;
+        
+        border-radius: 5px;
+    }
+
+    .experience .content{
+        position: relative;
+        transform: translateY(-20px);
+    }
+    
+    .experience .left {
+        left: 0;
+    }
+    
+    .experience .right {
+        left:50.40%;
+    }
+    
+    .experience .right:after {
+        left: -17px;
+    }
+    
+    /* traingle */
+    
+    .experience .left:before {
+        content: '';
+        position: absolute;
+        width : 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 10px solid transparent;
+        right: 10px;
+        top: 22px;
+    }
+    
+    .experience .right:before {
+        content: ' ';
+        position: absolute;
+        width : 0;
+        height: 0;
+        border-right: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        left: 10px;
+        top: 22px;
+    }
+    
     
 
+    /* media */ 
     
+    @media(max-width:600px) {
+        .experience  .timeline:after {
+            left: 24px;
+        }
+        .experience .container-1 {
+            width: 100%;
+            padding-left: 49px;
+            padding-right: 20px;
+        }
+        .experience  .container-1:after {
+            left: 11px
+        }
+        .experience  .right {
+            left: 0;
+        }
+        .experience  .left:before , .right:before {
+            border-right: 10px solid #fff;
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            left: 30px;
+            top: 18px;
+        }
+
+        .experience .right:before  {
+            left :30px;
+            top: 18px;
+        }
+
+    }
     
+   
 
 
+    h5{
+        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
+        font-weight: 800;
+    }
+
+    .experience small{
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+    
+
+    .experience .heading .badge{
+        border-radius: 5px ;
+        padding: calc(7px + (9 - 7) * ((100vw - 320px) / (1600 - 320)))  calc(8px + (10 - 8) * ((100vw - 320px) / (1600 - 320))) !important;
+        color:#fff;
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+        background-color:#00ADEF;
+    }
+
+   
+
+    .experience .mb-55{
+        margin-bottom: 5.5em;
+    }
+
+    .experience .container-1 .badge{
+        padding: calc(7px + (8 - 7) * ((100vw - 320px) / (1600 - 320)))  calc(8px + (10 - 8) * ((100vw - 320px) / (1600 - 320)))  !important;
+
+    }
+
+    .experience .container-1 .badge-primary{
+        padding: calc(7px + (9 - 7) * ((100vw - 320px) / (1600 - 320))) calc(8px + (18 - 8) * ((100vw - 320px) / (1600 - 320))) !important;
+
+    }
+
+
+    .experience .btn{
+        padding:calc(10px + (12 - 10) * ((100vw - 320px) / (1600 - 320)))  calc(14px + (17 - 14) * ((100vw - 320px) / (1600 - 320)))
+    }
+
+    .experience .jarallax {
+        height:auto;
+        z-index: 20;
+    }
+
+    .experience .services-line:after {
+        border-radius: 5px ;
+        content: '';
+        display: block;
+        border-top: 3px solid #000;
+        margin-top: 0.3em;
+        margin: 10px auto 1em;
+        width: 45%;
+        color:#202125 !important;
+    }
+
+    .experience p{
+        font-family: 'Raleway', sans-serif !important;
+        word-break: break-all;   
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+
+    }
+
+
+   
+
+    footer {
+        background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+        font-family: 'Rubik', sans-serif;
+        background: #455A64;
+        height: 100 !important;
+    
+   
+   
+        overflow: hidden;
+        background: #262626;
+        color: #627482 !important;
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #627482 !important;
+
+    }
+   
+    footer small {
+        font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer .bold-text {
+        color: #b2b8bb !important
+    }
+   
+    footer .mt-55 {
+        margin-top: calc(30px + (40 - 30) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer h3 {
+        font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer .social {
+        font-size: 21px !important
+    }
+   
+    footer .rights {
+        font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+    
+    .fa{    
+        cursor: pointer;
+    }
 
 
    
@@ -821,94 +1145,167 @@
 
 <body>
     <div class="container-fluid">
-        <section class="menu " id="home">
-            <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/3VYsdRE.jpg" alt="">
-                <header>
-                    <nav class="navbar fixed-top">
-                    <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light">Prathamesh J. Chatorikar </span>
-                    <div class="ml-auto">
-                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
-                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
-                        <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="services" href="#">Work</a>
-                    </div>
-                    </nav>
-                </header>
-                <div class="row intro text-light rellax " >
-                        <div class="col-12">
-                            <h6><span><b> Hello ! </b></span></h6>
-                            <h2 class="mb-0">I Am Prathamesh</h2>
-                            <div class="row no-gutters my-3">
-                                <div class="col "><hr  class="line" ></div>
-                                <div class="col ml-2 d-flex"><small> Web Developer</small></div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
-                            </ul>
+    <section class="menu " id="home">
+        <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/PEtByPG.jpg" alt="">
+            <header>
+                <nav class="navbar fixed-top">
+                <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light"> <b>Prathamesh J. Chatorikar</b> </span>
+                <div class="ml-auto">
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="my-work" href="#">Work</a>
+                </div>
+                </nav>
+            </header>
+            <div class="row intro text-light rellax " >
+                    <div class="col-12">
+                        <h6><span><b> Hello ! </b></span></h6>
+                        <h2 class="mb-0">I Am Prathamesh</h2>
+                        <div class="row no-gutters my-3">
+                            <div class="col "><hr  class="line" ></div>
+                            <div class="col ml-2 d-flex"><small> Web Developer</small></div>
                         </div>
                     </div>
-            </div>
-        </section>
-
-        <section class="about-me px-3" id="about">
-        <div class="row mt-55 d-flex justify-content-center">
-            <div class="col-xl-8 col-lg-10 col-sm-12 ">
-                    <div class="media  flex-column flex-md-row ">
-                        <img class="align-self-center img-fluid" src="https://i.imgur.com/54jNVkn.png" alt="DP">
-                        <div class="media-body ml-lg-5 ">
-                            <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
-                            <hr class="my-0 me-line" align="left">
-                            <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus
-                                ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum
-                                posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst.
-                                In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit
-                                vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
-                            <div class="about_details mt-2">
-                                <div class="row my-5">
-                                    <div class="col-lg-6 col-12">
-                                        <ul class="list-unstyled my-3 ">
-                                            <li>
-                                                <div class="ct_about">
-                                                    <span><i class="fa fa-map-marker"></i> Location</span>
-                                                    <span class="info text-muted">: PICT Pune</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="ct_about">
-                                                    <span><i class="fa fa-graduation-cap"></i> Education</span>
-                                                    <span class="info text-muted">:BE IT </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <ul class="list-unstyled my-3">
-                                            <li>
-                                                <div class="ct_about">
-                                                    <span><i class="fa fa-phone"></i> Phone</span>
-                                                    <span class="info text-muted">:+919595666570</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="ct_about">
-                                                    <span><i class="fa fa-envelope"></i> Email</span>
-                                                    <span class="info text-muted">:chatorikar@gmail.com</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12">
-                                            <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4" data-abc="true"><i class="fa fa-download"></i>Download CV</a> 
-                                    </div>
+                    <div class="col-12">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="about-me px-3" id="about">
+    <div class="row mt-55 d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-10 col-sm-12 ">
+                <div class="media  flex-column flex-md-row ">
+                    <img class="align-self-center img-fluid" src="https://i.imgur.com/54jNVkn.png" alt="DP">
+                    <div class="media-body ml-lg-5 ">
+                        <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
+                        <hr class="my-0 me-line" align="left">
+                        <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus
+                            ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum
+                            posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst.
+                            In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit
+                            vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
+                        <div class="about_details mt-2">
+                            <div class="row my-5">
+                                <div class="col-lg-6 col-12">
+                                    <ul class="list-unstyled my-3 ">
+                                        <li>
+                                            <div class="ct_about">
+                                                <span><i class="fa fa-map-marker"></i> Location</span>
+                                                <span class="info text-muted">: PICT Pune</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ct_about">
+                                                <span><i class="fa fa-graduation-cap"></i> Education</span>
+                                                <span class="info text-muted">:BE IT </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <ul class="list-unstyled my-3">
+                                        <li>
+                                            <div class="ct_about">
+                                                <span><i class="fa fa-phone"></i> Phone</span>
+                                                <span class="info text-muted">:+919595666570</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ct_about">
+                                                <span><i class="fa fa-envelope"></i> Email</span>
+                                                <span class="info text-muted">:chatorikar@gmail.com</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12">
+                                        <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4" data-abc="true"><i class="fa fa-download"></i>Download CV</a> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="experience">
+            <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/GHTxtbK.png" alt="">        
+            <div class="row">
+                <div class="col">
+                    <div class="row mb-55">
+                        <div class="col text-center heading">
+                            <span class="badge badge-pill mb-3">My Experiences</span><br>
+                            <h2 class="services-line mx-auto mb-3 ">Timeline</h2>
+                        </div>
+                    </div> 
+                    <div class="timeline">
+                        <div class="container-1 left">
+                             <div class="content border-0 card ">
+                                <div class="row">
+                                    <div class="col mb-3"><h5 class="mb-3">Web Developer  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- BBBootstrap Comapany</small> <br><small>- Oct 2019 - Jan 2020</small> </div>
+                                </div> 
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
+                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                               </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-1 right">
+                             <div class="content border-0 card ">
+                                <div class="row">
+                                    <div class="col mb-3"><h5 class="mb-3">Farmer Portal  <span class="badge badge-pill badge-primary ">Project</span> </h5>  <small >- Internal Hackathon 2020</small> <br><small>- Jan 2020</small> </div>
+                                </div> 
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
+                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                               </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-1 left">
+                               <div class="content border-0 card ">
+                                <div class="row">
+                                    <div class="col mb-3"><h5 class="mb-3">Campus Ambassador  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- Internshala Comapany</small> <br><small>- Aug 2019 - Oct 2019</small> </div>
+                                </div> 
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
+                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                               </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-1 right">
+                             <div class="content border-0 card">
+                                <div class="row">
+                                    <div class="col mb-3"><h5 class="mb-3">Event Management<span class="badge badge-pill badge-primary project">Project</span> </h5>  <small >- DBMS Mini Project</small> <br><small>- June 2019 - Sept 2019</small> </div>
+                                </div> 
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
+                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                               </div>
+                            </div>
+                        </div>
+    
+                        <div class="container-1 left last">
+                            <div class="content border-0 card ">
+                                <div class="row">
+                                    <div class="col mb-3"><h5 class="mb-3">ERP Software<span class="badge badge-pill badge-primary ">Project</span></h5><small >- Commerical Project</small> <br><small>- May 2019 - Aug 2019</small> </div>
+                                </div> 
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
+                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                               </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
+    
         </section>
+
     <section class="contact bg-white">
         <div class="row d-flex align-self-center justify-content-center text-center">
             <div class="col ">
@@ -919,7 +1316,7 @@
             </div>
         </div>
     </section>
-    <section class="services px-3 ">
+    <section class="services px-3 " id="servi">
         <div class="row d-flex justify-content-center">
             <div class="col text-center">
                 <span class="badge badge-pill badge-primary my-3">My Services</span><br>
@@ -985,15 +1382,18 @@
             </div>
         </div>
     </section>
-    <section id="services" class="work">
-       <div class="row d-flex justify-content-center">
+    <section  class="work" id="my-work">  
+        <div class="row d-flex align-self-center justify-content-center text-center ">
+            <div class="col ">
+                <div class="jarallax "><img class="jarallax-img" src="https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg" alt="">
+       <div class="row ">
             <div class="col text-center">
-                <span class="badge badge-pill badge-primary my-3">My Snippets</span><br>
-                <h2 class="services-line mx-auto mb-5">What I Did</h2>
+                <span class="badge badge-pill badge-primary mb-3">My Snippets</span><br>
+                <h2 class="services-line mx-auto mb-3 ">What I Did</h2>
             </div>
         </div> 
-        <div class="row text-center d-flex justify-content-center ">
-            <div class="col-12 pb-5 mb-5"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button> <button class="btn btn-default filter-button" data-filter="Modal">Modal</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button>  </div>
+        <div class="row text-center d-flex justify-content-center pb-55 ">
+            <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
                 <div class="Checkout justify-content-center gallery_product col-auto filter">
                     <div class="item item-type-move">
                             <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Upload Form<div class="card-line"></div></div><div class="date">Bootstrap 4 request a quote form with upload file</div></div><div class="mask"></div></a>
@@ -1003,7 +1403,7 @@
                 <div class="Checkout justify-content-center gallery_product col-auto filter">
                     <div class=" item item-type-move border-1">
                             <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Hand Lettering Process<div class="card-line"></div></div><div class="date">February 29, 2014</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/P3ekav4.jpg" class="img-fluid" alt="" /></div>
+                            <div class="item-img"><img src="https://i.imgur.com/Qip6juY.jpg" class="img-fluid" alt="" /></div>
                     </div>
                 </div>
                 <div class="Checkout justify-content-center gallery_product col-auto filter">
@@ -1014,26 +1414,75 @@
                 </div>
                 <div class="Carousel justify-content-center gallery_product col-auto filter">
                     <div class=" item item-type-move border-1">
+                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Carousel<div class="card-line"></div></div><div class="date">Carousel slider testimonials with dots</div></div><div class="mask"></div></a>
+                            <div class="item-img"><img src="https://i.imgur.com/XUK8a6i.jpg" class="img-fluid" alt="" /></div>
+                    </div>
+                </div>
+                <div class="Modal justify-content-center gallery_product col-auto filter">
+                    <div class=" item item-type-move border-1">
+                        <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Hand Lettering Process<div class="card-line"></div></div><div class="date">February 29, 2014</div></div><div class="mask"></div></a>
+                        <div class="item-img"><img src="https://i.imgur.com/hujEdDL.jpg"  class="img-fluid" alt="" /></div>
+                    </div>
+                </div>
+                <div class="Carousel justify-content-center gallery_product col-auto filter">
+                    <div class=" item item-type-move border-1">
                         <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Carousel<div class="card-line"></div></div><div class="date">Carousel slider testimonials with dots</div></div><div class="mask"></div></a>
                         <div class="item-img"><img src="https://i.imgur.com/yyh0EuS.jpg" class="img-fluid" alt="" /></div>
                         
                     </div>
                 </div>
-                <div class="Modal justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Hand Lettering Process<div class="card-line"></div></div><div class="date">February 29, 2014</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/hujEdDL.jpg"  class="img-fluid" alt="" /></div>
-                    </div>
+                <div class="col-12 m-4">
+                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-3">View All</span> <i class="fa fa-arrow-right"></i></a> 
                 </div>
-                <div class="Carousel justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Carousel<div class="card-line"></div></div><div class="date">Carousel slider testimonials with dots</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/XUK8a6i.jpg" class="img-fluid" alt="" /></div>
-                    </div>
-                </div>
-    </section>
-      
+            </div>
+        </div>
     </div>
+</div>
+    </section>
+
+    <section class="footer ">
+        <footer>
+            <div class="row my-5 justify-content-center pt-3 px-3">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12  my-auto mx-auto a">
+                            <h3 class="text-muted mb-md-0 mb-5 bold-text">Chatorikar.</h3>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a data-value="home" href="#">Home</a></li>
+                                <li><a data-value="about" href="#">About</a></li>
+                                <li><a data-value="my-work" href="#">Work</a></li>
+                                <li><a data-value="servi" href="#">Services</a></li>
+                               
+                                
+                               
+                               
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                            <p class="mb-1">Plot No 14,Gitai Banglo  Dhankawadi</p>
+                            <p>Dist Pune</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#9400;</span> Chatorikar All Rights Reserved.</small>
+                        </div>
+                        <div class="col-auto order-1 align-self-end ">
+                            <h6 class="mt-55 mt-2 text-muted bold-text"><b>Prathamesh J. Chatorikar</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> prathameshchatorikar29@gmail.com</small>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <section class="get-in-touch"></section>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
