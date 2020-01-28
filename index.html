@@ -589,11 +589,15 @@
             font-family: 'Raleway', sans-serif !important;
             word-break: break-all;   
             font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
-
+            line-height: calc(20px + (25 - 20) * ((100vw - 320px) / (1600 - 320))) !important;;;
+            margin: auto auto;
         }
 
         .services .card{
             margin-top: 100px !important;
+            margin: 0 auto;
+            width: calc(300px + (425 - 300) * ((100vw - 320px) / (1600 - 320))) !important;;
+            height: calc(330px + (355 - 330) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
         @media (max-width: 880px){
@@ -603,13 +607,14 @@
                 flex-flow: inherit;
                 margin-right: inherit;
                 margin-left: inherit;
-                width:calc(500px + (500 - 500) * ((100vw - 320px) / (1600 - 320))) !important; 
                 justify-content: center !important;
                 margin: 0 auto;
             }
     
            
         }
+
+      
 
       
         
@@ -824,11 +829,11 @@
     }
 
     .work .main-row{
-        margin-bottom:5rem ;
+        margin-bottom:2rem ;
     }
 
     .work .pb-55{
-        padding-bottom:7vw !important;
+        padding-bottom:5vw !important;
     }
 
 
@@ -854,6 +859,7 @@
     .work .highlight-button {
         border: 2px solid #fff;
         display: inline-block;
+        margin-top: 5vw !important;
         padding: 17px 30px 17px !important;
         color: #000;
         border-radius:50px !important;
@@ -871,6 +877,118 @@
         background-color: #000;
         border: 2px solid #000;
     }
+
+    .work .card{
+        border-radius:0 !important;
+    }
+
+    .work .img-fluid {
+        width: 100%;
+        height: inherit;
+    }
+
+    .work .content {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        overflow: hidden
+    }
+
+    .work .content .content-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s
+    }
+
+    .work  .content:hover .content-overlay {
+        opacity: 1
+    }
+
+    .work .content-image {
+        width: 100%
+    }
+
+    .work img {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+     
+    }
+
+    .work .card{
+        width: calc(250px + (400 - 250) * ((100vw - 320px) / (1600 - 320))) !important;;
+        height: calc(170px + (205 - 170) * ((100vw - 320px) / (1600 - 320))) !important;
+        box-shadow: 1px 2px 5px 2px rgb(44, 44, 44);
+        margin: 0 auto;
+    }
+
+ 
+
+    .work .card .content-image {
+        object-fit: cover !important;
+        object-position: center !important;
+        height: 100%;
+        box-sizing: border-box
+    }
+
+    .work p{
+        padding-bottom:0 ;
+    }
+
+    .work .content-details {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s
+    }
+
+    .work  .content:hover .content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1
+    }
+
+    .content-details h5 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase
+    }
+
+    .work  .content-details p {
+        color: #fff;
+        font-size: 0.9em;
+    }
+
+    .work  .fadeIn-bottom {
+        top: 80%
+    }
+
+    .work a{
+        text-decoration: none ;
+        color: #fff;
+
+    }
+
 
 
     .experience {
@@ -922,9 +1040,10 @@
         border-radius: 50%;
         background: #fff;
         right: -12px;
-        border: 4px solid #ff9f55;
+        border: 4px solid #c2c525;
         z-index: 9;
         top: 15px;
+        border: radius 50px !important;
     }
     
     .experience  .content {
@@ -1325,7 +1444,7 @@
                     </div> 
                     <div class="timeline">
                         <div class="container-1 left">
-                             <div class="content border-0 card ">
+                             <div class="content border-0 card d-block ">
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">Web Developer  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- BBBootstrap Comapany</small> <br><small>- Oct 2019 - Jan 2020</small> </div>
                                 </div> 
@@ -1336,7 +1455,7 @@
                         </div>
                         
                         <div class="container-1 right">
-                             <div class="content border-0 card ">
+                             <div class="content border-0 card d-block ">
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">Farmer Portal  <span class="badge badge-pill badge-primary ">Project</span> </h5>  <small >- Internal Hackathon 2020</small> <br><small>- Jan 2020</small> </div>
                                 </div> 
@@ -1347,7 +1466,7 @@
                         </div>
                         
                         <div class="container-1 left">
-                               <div class="content border-0 card ">
+                               <div class="content border-0 card d-block ">
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">Campus Ambassador  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- Internshala Comapany</small> <br><small>- Aug 2019 - Oct 2019</small> </div>
                                 </div> 
@@ -1358,7 +1477,7 @@
                         </div>
                         
                         <div class="container-1 right">
-                             <div class="content border-0 card">
+                             <div class="content border-0 card d-block">
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">Event Management<span class="badge badge-pill badge-primary project">Project</span> </h5>  <small >- DBMS Mini Project</small> <br><small>- June 2019 - Sept 2019</small> </div>
                                 </div> 
@@ -1369,7 +1488,7 @@
                         </div>
     
                         <div class="container-1 left last">
-                            <div class="content border-0 card ">
+                            <div class="content border-0 card d-block ">
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">ERP Software<span class="badge badge-pill badge-primary ">Project</span></h5><small >- Commerical Project</small> <br><small>- May 2019 - Aug 2019</small> </div>
                                 </div> 
@@ -1403,29 +1522,29 @@
                 <h2 class="services-line mx-auto ">What I Do</h2>
             </div>
         </div> 
-        <div class=" row mx-2">   
-            <div class="card-deck justify-content-center">
-                <div class=" card col-xl-3 col-12  text-center border-0 pb-4">
+        <div class=" row mx-3 d-flex justify-content-center">   
+            <div class="card-deck ">
+                <div class=" card col-auto  mx-md-3 text-center border-0 pb-4">
                     <div class="row justify-content-center ">
                         <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
                     </div>
                     <div class="row text-center card-name">
-                        <div class="col">
+                        <div class="col ">
                             <h5 class="mb-4 ">Responsive Layout</h5>
                             <hr class="heading-line mb-4">
                         </div>
                     </div>
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
-                            <div class="col px-xl-5 px-lg-3 px-2">
-                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            <div class="col  px-xl-3 px-2">
+                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" card col-xl-3 col-12  text-center border-0 pb-4">
+                <div class=" card col   text-center border-0 pb-4 mx-md-3">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                        <div class="col "> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
                     </div>
                     <div class="row text-center card-name">
                         <div class="col">
@@ -1435,15 +1554,15 @@
                     </div>
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
-                            <div class="col px-xl-5 px-lg-3 px-2">
-                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            <div class="col  px-xl-3 px-2">
+                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" card col-xl-3 col-12  text-center border-0 pb-4 pb-4">
+                <div class=" card col   text-center border-0 pb-4 pb-4 mx-md-3">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                        <div class="col "> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
                     </div>
                     <div class="row text-center card-name">
                         <div class="col">
@@ -1453,8 +1572,8 @@
                     </div>
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
-                            <div class="col px-xl-5 px-lg-3 px-2">
-                                <p class="bold">  insight that matter was challengingGrowth of data is exponential and our ability to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                            <div class="col  px-xl-3 px-2">
+                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
                             </div>
                         </div>
                     </div>
@@ -1472,7 +1591,7 @@
                 <h2 class="services-line mx-auto mb-3 ">What I Did</h2>
             </div>
         </div> 
-        <div class="row text-center d-flex justify-content-center pb-55 ">
+        <!-- <div class="row text-center d-flex justify-content-center pb-55 ">
             <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
                 <div class="Checkout justify-content-center gallery_product col-auto filter">
                     <div class="item item-type-move">
@@ -1514,7 +1633,82 @@
                 <div class="col-12 m-4">
                     <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-3">View All</span> <i class="fa fa-arrow-right"></i></a> 
                 </div>
+        </div> -->
+
+        <div class="row text-center d-flex justify-content-center pb-55 no-gutters">
+                <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
+
+            <div class="Checkout  col-lg-auto col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
+                        </div>
+                    </a> 
+                </div>
             </div>
+            <div class="Checkout col-lg-4 col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/Qip6juY.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Ecommerce product order details with tracking
+                            </p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Checkout col-lg-auto col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/BxSioBp.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Shopping bag checkout with order summary</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Carousel col-lg-4 col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/yyh0EuS.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Carousel</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Auto carousel testimonial with profile on left edge</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Modal col-lg-auto col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/hujEdDL.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Modal</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Get contact details modal with arrow button</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Carousel col-lg-4 col-md-6 col-auto mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/XUK8a6i.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Carousel</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i>  Carousel slider testimonials with dots</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="col-12 m-4">
+                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-3">View All</span> <i class="fa fa-arrow-right"></i></a> 
+                </div>
+        </div>
         </div>
     </div>
 </div>
@@ -1553,7 +1747,7 @@
         <div class="row my-5 justify-content-center pt-2  px-3">
             <div class="col-11">
                 <div class="row ">
-                    <div class="col-xl-8 col-md-4 col-sm-4 col-12  my-auto mx-auto a">
+                    <div class="col-xl-8 col-lg-4 col-md-6 col-auto col-sm-4 col-12  my-auto mx-auto a">
                         <h3 class="text-muted mb-md-0 mb-5 bold-text">Chatorikar.</h3>
                     </div>
                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
@@ -1578,6 +1772,7 @@
                     <div class="col-auto order-1 align-self-end ">
                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>Prathamesh J. Chatorikar</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> prathameshchatorikar29@gmail.com</small>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -1649,13 +1844,13 @@
                     if(value == "all")
                     {
                     
-                    $('.filter').show('1000');
+                    $('.filter').show('10000');
                     }
                     else
                     {
                     
-                    $(".filter").not('.'+value).hide('3000');
-                    $('.filter').filter('.'+value).show('3000');
+                    $(".filter").not('.'+value).hide('10000');
+                    $('.filter').filter('.'+value).show('10000');
                     
                     }
                     });
