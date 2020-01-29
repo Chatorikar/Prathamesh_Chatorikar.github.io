@@ -889,7 +889,8 @@
 
     .work .content {
         position: relative;
-        width: 90%;
+        width: 100%;
+        height: 100%;
         max-width: 400px;
         margin: auto;
         overflow: hidden
@@ -898,7 +899,7 @@
     .work .content .content-overlay {
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
-        height: 99%;
+        height: 100%;
         width: 100%;
         left: 0;
         top: 0;
@@ -925,19 +926,16 @@
 
     .work .card{
         width: calc(250px + (400 - 250) * ((100vw - 320px) / (1600 - 320))) !important;;
-        height: calc(170px + (205 - 170) * ((100vw - 320px) / (1600 - 320))) !important;
+        height: calc(170px + (245 - 170) * ((100vw - 320px) / (1600 - 320))) !important;
         box-shadow: 1px 2px 5px 2px rgb(44, 44, 44);
         margin: 0 auto;
     }
 
- 
-
-    .work .card .content-image {
-        object-fit: cover !important;
-        object-position: center !important;
-        height: 100%;
-        box-sizing: border-box
+    .work .card img{
+        width: 100%;
+        height: calc(170px + (245 - 170) * ((100vw - 320px) / (1600 - 320))) !important;
     }
+
 
     .work p{
         padding-bottom:0 ;
@@ -1502,8 +1500,7 @@
                 </div>
             </div>
         </div>
-    
-        </section>
+    </section>
 
     <section class="contact bg-white">
         <div class="row d-flex align-self-center justify-content-center text-center">
@@ -1635,7 +1632,7 @@
                 </div>
         </div> -->
 
-        <div class="row text-center d-flex justify-content-center pb-55 no-gutters">
+        <div class="row text-center d-flex justify-content-center pb-55 ">
                 <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
 
             <div class="Checkout  col-lg-auto col-md-6 col-auto mt-4 filter">
@@ -1649,7 +1646,7 @@
                     </a> 
                 </div>
             </div>
-            <div class="Checkout col-lg-4 col-md-6 col-auto mt-4 filter">
+            <div class="Checkout col-lg-auto col-md-6 col-auto mt-4 filter">
                 <div class="content card border-0"> 
                     <a href="#">
                         <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/Qip6juY.jpg">
@@ -1672,7 +1669,7 @@
                     </a> 
                 </div>
             </div>
-            <div class="Carousel col-lg-4 col-md-6 col-auto mt-4 filter">
+            <div class="Carousel col-lg-auto col-md-6 col-auto mt-4 filter">
                 <div class="content card border-0"> 
                     <a href="#">
                         <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/yyh0EuS.jpg">
@@ -1694,7 +1691,7 @@
                     </a> 
                 </div>
             </div>
-            <div class="Carousel col-lg-4 col-md-6 col-auto mt-4 filter">
+            <div class="Carousel col-lg-auto col-md-6 col-auto mt-4 filter">
                 <div class="content card border-0"> 
                     <a href="#">
                         <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/XUK8a6i.jpg">
