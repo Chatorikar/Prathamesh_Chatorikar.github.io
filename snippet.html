@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/imageHover.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <title>This is not your session to die</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Poiret+One|Rubik&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    body{
+        height: 100%;
+        font-family: 'Raleway', sans-serif !important;
+    }
+
+
+    .container-fluid {
+        margin: 0 auto;
+        transition: 0.5s;
+        padding: 0;
+        overflow-x: hidden !important;
+        scroll-behavior: smooth;
+
+    }
+    
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    .homeLink {
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320))) !important;
+        line-height: calc(25px + (40 - 25) * ((100vw - 360px) / (1600 - 360))) !important;
+        background-color: #fff !important;
+        color: #232B2B;
+        font-weight: 700;
+        text-align: center;
+        font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 30))) !important;
+        transition: 0.5s !important;
+    }
+    
+    nav a {
+
+        text-decoration: none !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+    
+    .navbar-1 {
+        background-color: #232B2B !important;
+        padding: 15px 15px 15px 15px;
+        top: 0% !important;
+
+    }
+
+
+    nav a {
+        text-decoration: none !important;
+        color: #fff;
+        font-weight: bold;
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+    nav a:hover {
+        color: currentColor;
+    }
+
+    nav a.navbar-brand:hover {
+        color: #fff !important;
+    }
+
+    .homeLink:hover {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+
+    .name {
+        color: #fff !important;
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+    nav {
+        transition: 0.5s;
+    }
+
+
+    .navbar {
+        top: 8%;
+        padding-left: calc(55px + (89 - 55) * ((100vw - 320px) / (1600 - 320)));
+        padding-right: calc(55px + (90 - 55) * ((100vw - 320px) / (1600 - 320)));
+        background-color: transparent ;
+
+    }
+
+    small {
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+    h2 {
+        font-size: calc(26px + (55 - 26) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+
+
+    @media (max-width: 642px) {
+        .menu .name {
+            display: none;
+        }
+
+
+        .navbar {
+            top: 4%;
+            z-index: 2222;
+            padding: 1rem 1rem 1rem 2rem
+        }
+
+        .breadcrumb {
+            
+            padding: 1rem 1rem 1rem 2rem
+        }
+
+    
+        .navbar-1 {
+            
+            margin-top: 2px;
+            top: 0% !important;
+            background-color: #000 ;
+
+        }
+    }
+    
+    .btn:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
+
+    h2{
+        font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1600 - 320))) !important;
+        font-family: 'Raleway', sans-serif !important;
+        
+    }
+
+  
+
+    footer {
+        background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+        height: 100 !important;
+        overflow: hidden;
+        background: #262626;
+        color: #627482 !important;
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #627482 !important;
+    }
+   
+    footer small {
+        font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer .bold-text {
+        color: #b2b8bb !important
+    }
+   
+    footer .mt-55 {
+        margin-top: calc(30px + (40 - 30) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer h3 {
+        font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+   
+    footer .social {
+        font-size: 21px !important
+    }
+   
+    footer .rights {
+        font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+    
+/*Breadcrumbs*/
+
+    .bread a:hover {
+        color: #000 !important
+    }
+
+    .bread  {
+        margin-top: calc(68px + (76      - 68) * ((100vw - 360px) / (1600 - 360))) !important ;
+        height: auto;
+        word-break: break-all;
+        background-color:#fff !important;
+        z-index: 9999 !important;
+        position: fixed;
+        width: 100%;
+        font-weight: bold;
+        padding-left: calc(25px + (85 - 25) * ((100vw - 320px) / (1600 - 320)));
+    }
+    
+    .breadcrumb{
+        margin-bottom: 0rem;
+        background-color:#fff !important;
+    }
+
+    .bread li a:focus,
+    .bread li a:active {
+        outline: none !important;
+        box-shadow: none !important
+    }
+
+    .bread img {
+        vertical-align: middle !important;
+        opacity: 0.5;
+        cursor: pointer
+    }
+
+    .bread .breadcrumb>li+li:before {
+        color: #000 !important;
+        font-size: larger;
+        display: inline-block;
+        width: calc(8px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
+        height: calc(8px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));
+        margin-right: calc(2px + (5 - 2) * ((100vw - 320px) / (1600 - 320)));;
+        content: " ";
+        background: url("https://img.icons8.com/ios-filled/50/000000/double-right.png") no-repeat 0 0;
+        background-size: 100%;
+        vertical-align: middle !important;
+    }
+
+    .bread li a {
+        text-decoration: none !important;
+        color: #000 ;
+    }
+
+    .bread .breadcrumb {
+        padding: calc(9px + (15 - 9) * ((100vw - 320px) / (1600 - 320)));
+        font-size: calc(8px + (15 - 8) * ((100vw - 320px) / (1600 - 320)));
+        color: #fff !important;
+        letter-spacing: 1px;
+        border-radius: 8px !important;
+    }
+    .bread img
+    {
+        width: calc(13px + (18 - 13) * ((100vw - 320px) / (1600 - 320)));
+        height: calc(13px + (18 - 13) * ((100vw - 320px) / (1600 - 320)));
+    }
+
+    @media (max-width: 767px) {
+      
+        .bread .breadcrumb-item+.breadcrumb-item {
+            padding-left: 0;
+        }
+
+      
+        .bread .breadcrumb-item+.breadcrumb-item::before {
+            padding: .1em !important
+        }
+    }
+
+    .bread .active-1 {
+        color: #000 !important;
+        font-weight: bolder
+    }
+    .code-pen{
+        margin-top: calc(25px + (50 - 25) * ((100vw - 320px) / (1600 - 320)))  !important;
+        margin-bottom: 100px !important;
+    }
+
+    .related-snippets{
+       margin-bottom: 20vh;
+       margin: 5vh;
+    }
+
+    .badge{
+        border-radius: 5px ;
+        padding: calc(7px + (9 - 7) * ((100vw - 320px) / (1600 - 320)))  calc(8px + (10 - 8) * ((100vw - 320px) / (1600 - 320))) !important;
+        color:#fff;
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+        background-color:#00ADEF;
+    }
+
+     .services-line:after {
+        border-radius: 5px ;
+        content: '';
+        display: block;
+        border-top: 3px solid #000;
+        margin-top: 0.3em;
+        margin: 10px auto 1em;
+        width: calc(37px + (97 - 37) * ((100vw - 320px) / (1600 - 320))) !important;
+        color:#202125 !important;
+    }
+
+    .snip-name{
+        padding-left: calc(25px + (80 - 25) * ((100vw - 320px) / (1600 - 320)));
+        width: 100%;
+        background-color:#fff;
+
+    }
+
+    .jumbotron{
+        background-color:#fff;
+
+    }
+
+    .ct_about span i {
+        margin-right: 5px;
+    }
+
+
+   .btn {
+        display: inline-block;
+        margin-right: 20px;
+        letter-spacing: 1px;
+        border-radius: 0px !important;
+        border: 1px solid transparent
+    }
+
+    .btn-round {
+        border-radius: 0px !important
+    }
+
+      .btn i {
+        margin-right: 12px
+    }
+
+      .btn.btn-large i {
+        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+
+
+      .btn.btn-large {
+        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+
+    }
+
+    .btn:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
+
+
+
+     .highlight-button {
+        border: 2px solid #000;
+        display: inline-block;
+        padding: 4px 10px 5px;
+        font-size: 12px;
+        color: #000;
+        background-color: transparent
+    }
+
+      .highlight-button:hover {
+        background-color: #000;
+        border: 2px solid #000;
+        color: #fff
+    }
+
+      .highlight-button i {
+        color: #000
+    }
+
+    .snip-name  .highlight-button:hover i {
+        color: #fff !important;
+    }
+
+    .snip-name{
+        margin-top: calc(128px + (128 - 128) * ((100vw - 360px) / (1600 - 360))) !important ;
+        
+    }
+
+    .display-4{
+
+       font-size: calc(28px + (38 - 28) * ((100vw - 360px) / (1600 - 360))) !important ;
+    }
+
+    .snip-name  .media img {
+        max-width: 100%;
+        width: 25rem;
+        height: auto;
+        border-radius: 5px !important;
+        border: 1px solid #fff;
+
+    }
+
+
+    .related-snippets .card{
+        border-radius:0 !important;
+    }
+
+    .related-snippets .img-fluid {
+        width: 100%;
+        height: inherit;
+    }
+
+    .related-snippets .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        margin: auto;
+        overflow: hidden
+    }
+
+    .related-snippets .content .content-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s
+    }
+
+    .related-snippets  .content:hover .content-overlay {
+        opacity: 1
+    }
+
+    .related-snippets .content-image {
+        width: 100%
+    }
+
+    .related-snippets img {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+     
+    }
+
+    .related-snippets .card{
+        width: calc(250px + (350 - 250) * ((100vw - 320px) / (1600 - 320))) !important;;
+        height: calc(190px + (265 - 190) * ((100vw - 320px) / (1600 - 320))) !important;
+        box-shadow: 1px 2px 5px 2px rgb(44, 44, 44);
+        margin: 0 auto;
+    }
+
+    .related-snippets .card img{
+        width: 100%;
+        height: calc(190px + (265 - 190) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+
+    .related-snippets p{
+        padding-bottom:0 ;
+    }
+
+    .related-snippets .content-details {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        font-size:calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
+    .related-snippets  .content:hover .content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1
+    }
+
+    .content-details h5 {
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        text-transform: uppercase
+    }
+
+    .related-snippets  .content-details p {
+        color: #fff;
+        font-size: 0.9em;
+    }
+
+    .related-snippets  .fadeIn-bottom {
+        top: 80%
+    }
+
+    .related-snippets a{
+        text-decoration: none ;
+        color: #fff;
+
+    }
+
+    .related-snippets{
+        margin-bottom: 15vh !important;
+    }
+
+
+
+   
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+<section class="menu " id="home">
+    <header>
+        <nav class="navbar fixed-top navbar-1">
+        <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light"> <b>Prathamesh J. Chatorikar</b> </span>
+        <div class="ml-auto">
+            <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
+            <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
+            <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="my-work" href="#">Work</a>
+        </div>
+        </nav>
+    </header>
+</section>
+<section class="bread shadow-lg">
+        <div class="row text-center justify-content-center ">
+            <div class="col-12 ">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item "><img class="img-fluid mr-2" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1575780128/188-1884566_sublimetext-3-white-outline-sublime-text-3-icon.jpg" width="25" height="25"><a href="Home-1.html" class="pr-md-3 pl-md-2 pr-2 pl-1 ">Home</a></li>
+                    <li class="breadcrumb-item "><a href="#" class="px-md-3 px-1  ">Work </a></li>
+                    <li class="breadcrumb-item "><a href="#" class="px-md-3 px-1  active-1">listing of items with profiles </a></li>
+                    
+                </ol>
+            </div>
+        </div>
+</section>
+<section class="snip-name">
+        <div class="jumbotron jumbotron-fluid">
+                <h3 class="display-4">Bootstrap 4 Single listing of items with profiles</h3>
+                <div class="row">
+                        <hr class="my-4">
+                    <div class="col-12">
+                        <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4" data-abc="true"><i class="fa fa-download"></i>Download Souce Code</a> 
+                    </div>
+               </div>
+            </div>
+</section>
+<hr>
+<section class="mt-5  code-pen">
+       <div class="row justify-content-center">
+           <div class="col-11 my-5">
+                <p class="codepen" data-height="765" data-theme-id="dark" data-default-tab="result" data-user="Chatorikar" data-slug-hash="ZEYNJVr" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZEYNJVr">
+                        <span>See the Pen <a href="https://codepen.io/Chatorikar/pen/ZEYNJVr">
+                        ZEYNJVr</a> by Prathamesh J. Chatorikar (<a href="https://codepen.io/Chatorikar">@Chatorikar</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <!-- <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="result" data-user="Chatorikar" data-slug-hash="vYEwrVg" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYEwrVg">
+                        <span>See the Pen <a href="https://codepen.io/Chatorikar/pen/vYEwrVg">
+                        vYEwrVg</a> by Prathamesh J. Chatorikar (<a href="https://codepen.io/Chatorikar">@Chatorikar</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script> -->
+           </div>
+       </div>
+</section>
+
+<section class="related-snippets">
+        <div class="row px-5">
+            <div class="col text-center">
+                <span class="badge badge-pill badge-primary mb-3">Suggestions</span><br>
+                <h2 class="services-line mx-auto mb-3 ">Related Snippets</h2>
+            </div>
+        </div> 
+        <div class="row text-center d-flex justify-content-center pb-55 ">
+            <div class="Checkout  col mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Checkout col mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="Checkout col mt-4 filter">
+                <div class="content card border-0"> 
+                    <a href="#">
+                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h5 class="content-title">Checkout</h5>
+                            <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section class="footer ">
+    <footer>
+        <div class="row my-5 justify-content-center pt-2  px-3 justify-content-center">
+            <div class="col-11">
+                <div class="row justify-content-between">
+                    <div class="col-xl-8 col-lg-8 col-md-5 col-auto col-sm-6 col-12  my-auto  a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text">Chatorikar.</h3>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li class="py-1"><a  data-value="home" href="#">Home</a></li>
+                            <li class="py-1"><a  data-value="about" href="#">About</a></li>
+                            <li class="py-1"><a  data-value="my-work" href="#">Work</a></li>
+                            <li class="py-1"><a  data-value="servi" href="#">Services</a></li>                           
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                        <p class="mb-1">Plot No 14,Gitai Banglo  Dhankawadi</p>
+                        <p>Dist Pune</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-auto col-sm-6 col-12 my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-3"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights ml-3 "><span>&#9400;</span> Chatorikar All Rights Reserved.</small>
+                    </div>
+                    <div class="col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>Prathamesh J. Chatorikar</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> prathameshchatorikar29@gmail.com</small>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    
+
+    <script>
+         
+
+            $('#html-link').click(function() {
+            $('#html-link').removeClass('active-1');
+            $(this).addClass('active');
+            alert();
+            });
+         
+
+          
+
+        
+    
+        </script>
+
+</body>
+
+</html>
