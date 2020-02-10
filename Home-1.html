@@ -9,11 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/imageHover.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/png" href="http://www.example.com/favicon.png" />
 
-
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
     <title>This is not your session to die</title>
 
     <style>
@@ -25,6 +25,10 @@
             font-family: 'Raleway', sans-serif !important;
         }
 
+        html{
+            scroll-behavior: smooth !important;
+        }
+
 
         .container-fluid {
             margin: 0 auto;
@@ -34,6 +38,12 @@
             scroll-behavior: smooth;
 
         }
+
+        .vl {
+            border-left: calc(3px + (6 - 3) * ((100vw - 320px) / (1600 - 320)))  solid rgb(255, 255, 255);
+          }
+
+        
         .jarallax {
             position: relative;
             z-index: 22;
@@ -46,7 +56,27 @@
             object-fit: cover ;
             background-size:cover !important;
             /* support for plugin https://github.com/bfred-it/object-fit-images */
-            font-family: 'object-fit: cover;';
+            font-family: 'object-fit: fill  ;';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .menu .jarallax {
+            position: relative;
+            z-index: 22;
+            height: 120vh;
+
+        }
+
+        .menu .jarallax>.jarallax-img {
+            position: absolute;
+            object-fit: fill !important;
+            background-size:cover !important;
+            /* support for plugin https://github.com/bfred-it/object-fit-images */
+            font-family: 'object-fit: fill  ;';
             top: 0;
             left: 0;
             width: 100%;
@@ -149,20 +179,17 @@
             left: 24%;
             top: 30%;
             transform: translate(-20%, -10%);
-            font-family: 'Poiret One', cursive;
+            font-family: 'Trade Winds', cursive;
             font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1600 - 320))) ;
             z-index: -1 !important;
-
-
-
         }
 
 
 
         .intro .fa {
-            padding: calc(5px + (10 - 5) * ((100vw - 360px) / (1600 - 360))) !important;
+            padding: calc(5px + (13 - 5) * ((100vw - 360px) / (1600 - 360))) !important;
             font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (1600 - 360))) !important;
-            width: calc(32px + (44 - 32) * ((100vw - 360px) / (1600 - 360))) !important;
+            width: calc(32px + (48 - 32) * ((100vw - 360px) / (1600 - 360))) !important;
             text-align: center;
             line-height: 20px;
             text-decoration: none;
@@ -171,12 +198,17 @@
             opacity: 0.8;
         }
 
+        .intro h6{
+            font-size: calc(12px + (18 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+ 
+        }
+
         a {
             text-decoration: none !important
         }
 
         .intro .fa-facebook {
-            background: rgb(0, 0, 0);
+            background: transparent ;
             color: white;
             border: 2px solid #fff !important
         }
@@ -199,7 +231,7 @@
             border: 2px solid #000 !important
         }
 
-        .intro .fa-twitter:hover {
+        .intro .fa-instagram:hover {
             background: #fff !important;
             color: #000 !important;
             border: 2px solid #000 !important
@@ -207,21 +239,24 @@
 
 
 
-        .intro .fa-twitter {
-            background: rgb(0, 0, 0);
+        .intro .fa-instagram {
+
+            background: transparent;
             color: white;
             border: 2px solid #fff !important
         }
 
         .fa-github {
-            background: rgb(0, 0, 0);
+
+            background: transparent;
             color: white;
             border: 2px solid #fff !important;
 
         }
 
         .fa-linkedin {
-            background: rgb(0, 0, 0);
+
+            background: transparent;
             color: white;
             border: 2px solid #fff !important
         }
@@ -229,11 +264,12 @@
   
 
         .line {
-            color: rgb(153, 153, 153) !important;
-            background-color: rgb(112, 110, 110) !important;
+            color: rgb(255, 255, 255) !important;
+            background-color: rgb(255, 255, 255) !important;
             vertical-align: middle !important;
             width: calc(20px + (38 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
             float: right;
+            height: 1px;
         }
 
         small {
@@ -258,7 +294,7 @@
             .navbar {
                 top: 4%;
                 z-index: 2222;
-                padding: 1rem 1rem 1rem 2rem
+                padding: 0.7rem 1rem 0.7rem 2rem;
             }
 
             .onscroll {
@@ -860,14 +896,14 @@
 
 
     .work .highlight-button {
-        border: 2px solid #fff;
+        border-color:  #fff;
         display: inline-block;
         margin-top: 5vw !important;
-        padding: calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320)))  calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320))) calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+        padding: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320)))  calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320))) calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
         color: #000;
         border-radius:50px !important;
         background-color: #fff !important;
-        box-shadow: 2px 3px 4px 3px rgb(54, 54, 54);
+        box-shadow: 0px 20px 100px  rgba(231, 115, 19, 0.5);
         font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
 
     }
@@ -1043,7 +1079,7 @@
         border-radius: 50%;
         background: #fff;
         right: -12px;
-        border: 4px solid #c2c525;
+        border: 3px solid #fffb00;
         z-index: 9;
         top: 15px;
         border: radius 50px !important;
@@ -1051,7 +1087,7 @@
     
     .experience  .content {
         background: #fff;
-        padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320))) calc(14px + (38 - 14) * ((100vw - 320px) / (1600 - 320))) !important;;
+        padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320))) calc(14px + (38 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
         
         border-radius: 5px;
     }
@@ -1376,6 +1412,30 @@
         border-left:calc(2px + (4 - 2) * ((100vw - 320px) / (1600 - 360)))  solid #fff !important;
     }
 
+    .cursor-pointer{
+        cursor: pointer
+    }
+
+    .intro{
+        position: absolute;
+    }
+
+   
+    .modal h5{
+        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+
+    }
+
+    .modal li{
+        font-size: calc(9px + (15 - 9) * ((100vw - 320px) / (1600 - 320))) !important;
+
+    }
+
+    ul{
+        padding-inline-start: calc(15px + (40 - 15) * ((100vw - 320px) / (1600 - 320))) !important;;
+    }
+   
+
    
     </style>
 
@@ -1386,10 +1446,10 @@
 <body>
     <div class="container-fluid">
     <section class="menu " id="home">
-        <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/PEtByPG.jpg" alt="">
-            <header>
+        <div class="jarallax"  data-jarallax data-speed="0.4"><img class="jarallax-img" src="https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
+            <header >
                 <nav class="navbar fixed-top">
-                <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light"> <b>Prathamesh J. Chatorikar</b> </span>
+                <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light cursor-pointer" onclick="parent.location='/'"> <b>Prathamesh J. Chatorikar</b> </span>
                 <div class="ml-auto">
                     <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
                     <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
@@ -1397,24 +1457,25 @@
                 </div>
                 </nav>
             </header>
-            <div class="row  intro text-light rellax " >
+            <div class="row vl intro text-light rellax " >
                 <div class="col-12">
-                    <h6><span><b> Hello ! </b></span></h6>
-                    <h2 class="mb-0">I Am Prathamesh</h2>
-                    <div class="row no-gutters my-3">
-                        <div class="col "><hr  class="line" ></div>
-                        <div class="col ml-2 d-flex"><small> Web Developer</small></div>
+                    <h6 class="mb-4"><span> Websites promote you 24X7 : No employee will do that.</span></h6>
+                    <h2 class="mb-0">I'm Prathamesh</h2>
+                    <div class="row  no-gutters my-sm-3 ">
+                        <div class="col "><hr class="line align-self-center" ></div>
+                        <div class="col ml-2 d-flex align-self-center"><small> Web Developer</small></div>
                     </div>
                 </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/prathamesh.chatorikar.5" target="_blank" class="fa fa-facebook"></a><a href="#" target="_blank" class="fa fa-instagram"></a><a target="_blank" href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a target="_blank" href="#" class="fa fa-linkedin"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="about-me px-3" id="about">
+        
     <div class="row mt-55 d-flex justify-content-center">
         <div class="col-xl-10 col-lg-10 col-sm-12 ">
                 <div class="media  flex-column flex-md-row ">
@@ -1423,11 +1484,9 @@
                         <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
                         <hr class="my-0 me-line" align="left">
                         <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus
-                            ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum
-                            posuere. Ut aliquam metus quis laoreet elementum. In hac habitasse platea dictumst.
-                            In hac habitasse platea dictumst. Aliquam porta faucibus arcu, et consequat velit
-                            vestibulum in. Donec quis tellus ut urna volutpat posuere quis consectetur quam.</p>
+                        <p>I’m constantly learning web technologies and other design related topics, 
+                            currently playing around with Javascript and JQuery. I’m a skilled in many 
+                            areas of design and development</p>
                         <div class="about_details mt-2">
                             <div class="row my-5">
                                 <div class="col-lg-6 col-12">
@@ -1474,7 +1533,7 @@
     </section>
 
     <section class="experience">
-            <div class="jarallax"><img class="jarallax-img" src="https://i.imgur.com/ngkg58U.jpg" alt="">        
+            <div class="jarallax"><img class="jarallax-img" src="https://images.pexels.com/photos/876468/pexels-photo-876468.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">        
             <div class="row">
                 <div class="col">
                     <div class="row mb-55">
@@ -1512,7 +1571,7 @@
                                     <div class="col mb-3"><h5 class="mb-3">Campus Ambassador  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- Internshala Comapany</small> <br><small>- Aug 2019 - Oct 2019</small> </div>
                                 </div> 
                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-internshala" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1543,13 +1602,44 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="modal fade" id="modelId-internshala" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered justify-content-center" role="document">
+                    <div class="modal-content">
+                          
+                        <div class="modal-body p-0 m-0">
+                            <div class="container-fluid px-0 mx-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card border-0">
+                                            <img class="card-img-top mx-0 px-0" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1581333626/ISP15.png_k5tc9p.png" alt="certificate"><hr class="mb-0">
+                                            <div class="card-body">
+                                                <h5 class="text-center font-weight-bold mb-3" ><i><b>Marketing Intern </b>,</i> <span> <small> April 2019–June 2018</small></span> </h5>
+                                                <ul>
+                                                    <li>Promoted <b><u>Internshala</u></b> internships among my peers and assist them with internship-related queries</li>
+                                                    <li>Helped my peers to learn new skills via Internshala Trainings</li>
+                                                    <li>Conducted seminars in my college, and also represented Internshala in my college fests</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contact bg-white">
         <div class="row d-flex align-self-center justify-content-center text-center">
             <div class="col ">
                 <div data-jarallax data-speed="0.2" class="jarallax">
-                    <img class="jarallax-img" src="https://i.imgur.com/jlZIImg.jpg">
+                    <img class="jarallax-img" src="https://i.imgur.com/GT4GaE5.jpg">
                     <h1 class="display-4 text-light number  my-auto">CONTACT <span><i class="fa fa-phone mr-md-5 mr-3"></i></span>9595666570</h1>
                 </div>
             </div>
@@ -1621,132 +1711,93 @@
             </div>
         </div>
     </section>
-    <section  class="work" id="my-work">  
-        <div class="row d-flex align-self-center justify-content-center text-center ">
+    <section  class="work mx-sm-auto " id="my-work">  
+        <div class="jarallax "><img class="jarallax-img" src="https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg" alt="">
+        <div class="row   align-self-center justify-content-center text-center ">
             <div class="col ">
-                <div class="jarallax "><img class="jarallax-img" src="https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg" alt="">
        <div class="row ">
             <div class="col text-center">
                 <span class="badge badge-pill badge-primary mb-3">My Snippets</span><br>
                 <h2 class="services-line mx-auto mb-3 ">What I Did</h2>
             </div>
         </div> 
-        <!-- <div class="row text-center d-flex justify-content-center pb-55 ">
+
+        <div class=" row text-center d-flex  justify-content-center pb-55 ">
             <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
-                <div class="Checkout justify-content-center gallery_product col-auto filter">
-                    <div class="item item-type-move">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Upload Form<div class="card-line"></div></div><div class="date">Bootstrap 4 request a quote form with upload file</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/HRjAfTq.jpg" class="img-fluid" alt="" /></div>
+            <div class="col-xl-10 col-lg-11 col-auto text-center d-flex  justify-content-center">
+                <div class="row mx-3 text-center d-flex  justify-content-center">
+                    
+                    <div class="Checkout col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="snippet.html">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Checkout</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="Checkout col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="#">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/Qip6juY.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Checkout</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i> Ecommerce product order details with tracking
+                                    </p>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="Checkout col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="#">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/BxSioBp.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Checkout</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i> Shopping bag checkout with order summary</p>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="Carousel col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="#">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/yyh0EuS.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Carousel</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i> Auto carousel testimonial with profile on left edge</p>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="Modal col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="#">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/hujEdDL.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Modal</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i> Get contact details modal with arrow button</p>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="Carousel col-auto mt-4 filter">
+                        <div class="content card border-0"> 
+                            <a href="#">
+                                <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/XUK8a6i.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h5 class="content-title">Carousel</h5>
+                                    <p class="content-text"><i class="fa fa-location-arrow "></i>  Carousel slider testimonials with dots</p>
+                                </div>
+                            </a> 
+                        </div>
                     </div>
                 </div>
-                <div class="Checkout justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Hand Lettering Process<div class="card-line"></div></div><div class="date">February 29, 2014</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/Qip6juY.jpg" class="img-fluid" alt="" /></div>
-                    </div>
-                </div>
-                <div class="Checkout justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Checkout Form<div class="card-line"></div></div><div class="date">Shopping bag checkout with order summary</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/BxSioBp.jpg" class="img-fluid" alt="" /></div>
-                    </div>
-                </div>
-                <div class="Carousel justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                            <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Carousel<div class="card-line"></div></div><div class="date">Carousel slider testimonials with dots</div></div><div class="mask"></div></a>
-                            <div class="item-img"><img src="https://i.imgur.com/XUK8a6i.jpg" class="img-fluid" alt="" /></div>
-                    </div>
-                </div>
-                <div class="Modal justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                        <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Hand Lettering Process<div class="card-line"></div></div><div class="date">February 29, 2014</div></div><div class="mask"></div></a>
-                        <div class="item-img"><img src="https://i.imgur.com/hujEdDL.jpg"  class="img-fluid" alt="" /></div>
-                    </div>
-                </div>
-                <div class="Carousel justify-content-center gallery_product col-auto filter">
-                    <div class=" item item-type-move border-1">
-                        <a class="item-hover" href="#" target="_blank"><div class="item-info"><div class="headline">Carousel<div class="card-line"></div></div><div class="date">Carousel slider testimonials with dots</div></div><div class="mask"></div></a>
-                        <div class="item-img"><img src="https://i.imgur.com/yyh0EuS.jpg" class="img-fluid" alt="" /></div>
-                        
-                    </div>
-                </div>
-                <div class="col-12 m-4">
-                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-3">View All</span> <i class="fa fa-arrow-right"></i></a> 
-                </div>
-        </div> -->
-
-        <div class="row text-center d-flex justify-content-center pb-55 ">
-                <div class="col-12 pb-3 mb-3"><button class=" btn-active btn btn-default filter-button" data-filter="all"> All</button> <button class="btn btn-default filter-button" data-filter="Checkout">Checkout</button><button class=" btn btn-default filter-button" data-filter="Carousel">Carousel</button>  <button class="btn btn-default filter-button" data-filter="Modal">Modal</button>  </div>
-
-            <div class="Checkout  col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="snippet.html">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/HRjAfTq.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Checkout</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i> Bootstrap 4 request a quote form with upload file</p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="Checkout col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/Qip6juY.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Checkout</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i> Ecommerce product order details with tracking
-                            </p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="Checkout col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/BxSioBp.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Checkout</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i> Shopping bag checkout with order summary</p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="Carousel col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/yyh0EuS.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Carousel</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i> Auto carousel testimonial with profile on left edge</p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="Modal col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/hujEdDL.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Modal</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i> Get contact details modal with arrow button</p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
-            <div class="Carousel col-lg-auto col-md-6 col-auto mt-4 filter">
-                <div class="content card border-0"> 
-                    <a href="#">
-                        <div class="content-overlay"></div> <img class="content-image " src="https://i.imgur.com/XUK8a6i.jpg">
-                        <div class="content-details fadeIn-bottom">
-                            <h5 class="content-title">Carousel</h5>
-                            <p class="content-text"><i class="fa fa-location-arrow "></i>  Carousel slider testimonials with dots</p>
-                        </div>
-                    </a> 
-                </div>
-            </div>
+        </div>
             <div class="col-12 m-4">
-                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-sm-3 mr-2  ">View All</span> <i class="fa fa-arrow-right"></i></a> 
+                    <a href="bootstrap-snippet" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-sm-3 mr-2  ">View All</span> <i class="fa fa-arrow-right"></i></a> 
                 </div>
         </div>
         </div>
@@ -1764,16 +1815,17 @@
         </div> 
         <div class="row text-center justify-content-center mx-3">
                 <div class="col-md-6">
-                    <form>
+                    <form method="POST" action="web-designer-contact">
+                        {% csrf_token %}
                         <div class="row aa">
                             <div class="col-md-6">
-                                <div class="form-group"> <label class="sr-only">Name</label> <input type="text" class="form-control" required="" id="nameSix" placeholder="Your Name"> </div>
+                                <div class="form-group"> <label class="sr-only">Name</label> <input name="name" type="text" class="form-control" required="" id="nameSix" placeholder="Your Name"> </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group"> <label class="sr-only">Email</label> <input type="email" class="form-control" required="" id="emailSix" placeholder="Email Address"> </div>
+                                <div class="form-group"> <label class="sr-only">Email</label> <input name="email" type="email" class="form-control" required="" id="emailSix" placeholder="Email Address"> </div>
                             </div>
                         </div>
-                        <div class="form-group"> <label class="sr-only">Message</label> <textarea class="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div> <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-group"> <label class="sr-only">Message</label> <textarea name="message" class="form-control" required="" rows="7" placeholder="Write Message"></textarea> </div> <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div> 
@@ -1833,7 +1885,7 @@
     <script>
             $(document).ready(function () {
             $('.jarallax').jarallax({
-                speed: 0.2
+                speed: 0.2,
             });
             $(window).on('scroll', function () {
                 if ($(window).scrollTop()) {
@@ -1856,10 +1908,23 @@
                 }
             });
 
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                var objectSelect = $(".intro");
+                var objectPosition = objectSelect.offset().top;
+                if (scroll > objectPosition) {
+                    $("nav").addClass("navbar-1");
+    
+                } else {
+                    $("nav").removeClass("navbar-1");
+                }
+            });
+
 
             $(".navbar a").click(function(){
                 $("body,html").animate({
-                 scrollTop:$("#" + $(this).data('value')).offset().top-150
+
+                 scrollTop:$("#" + $(this).data('value')).offset().top
                 },1000)
                 
                });
@@ -1876,7 +1941,7 @@
 
         <script>
                 $(document).ready(function(){
-
+                 
                     $(".filter-button").click(function(){
                         $(".filter-button").removeClass("btn-active");
                         $(this).closest('button').addClass('btn-active');
@@ -1884,24 +1949,29 @@
                     if(value == "all")
                     {
                     
-                    $('.filter').show('10000');
+                    $('.filter').fadeIn('5000');
                     }
                     else
                     {
                     
-                    $(".filter").not('.'+value).hide('10000');
-                    $('.filter').filter('.'+value).show('10000');
+                    $(".filter").not('.'+value).fadeOut('50000');
+                    $('.filter').filter('.'+value).fadeIn('50000');
                     
                     }
                     });
                     
                
-                    
                   
                       
                     
                     });
+
+
         </script>
+
+
+    
+
 </body>
 
 </html>
