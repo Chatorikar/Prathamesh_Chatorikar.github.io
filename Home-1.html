@@ -72,13 +72,13 @@
             z-index: 1000;
             left: 0;
             top: 0;
-            width: calc(35px + (50 - 35) * ((100vw - 320px) / (1600 - 320))) !important;
+            width: calc(33px + (50 - 33) * ((100vw - 320px) / (1600 - 320))) !important;
             line-height: calc(25px + (40 - 25) * ((100vw - 360px) / (1600 - 360))) !important;
             background-color: #fff !important;
             color: #232B2B;
             font-weight: 700;
             text-align: center;
-            font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 30))) !important;
+            font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1600 - 30))) !important;
             transition: 0.5s !important;
         }
      
@@ -103,7 +103,7 @@
             text-decoration: none !important;
             color: #fff;
             font-weight: bold;
-            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
         nav a:hover {
@@ -402,7 +402,7 @@
         .about p {
             font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
             word-wrap: break-word;
-            line-height: 26px;
+            line-height: 29px;
             font-family: 'Open Sans', sans-serif;
         }
 
@@ -422,22 +422,30 @@
         }
 
         .about_details span {
-            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
             width: 43%;
             color: #222;
             font-weight: 500;
             display: inline-block;
         }
 
+        .about_details .fa{
+            font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        }
+
   
         .about-me h3 {
-            font-size: 30px;
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
+
             color: #1461ff;
             font-weight: 400;
             margin: 40px 0 20px;
             font-family: 'Raleway', sans-serif !important;
         }
-
+        .about-me p{
+            font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+        }
         .about-me {
             font-family: 'Raleway', sans-serif !important;            
         }
@@ -855,11 +863,12 @@
         border: 2px solid #fff;
         display: inline-block;
         margin-top: 5vw !important;
-        padding: 17px 30px 17px !important;
+        padding: calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320)))  calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320))) calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
         color: #000;
         border-radius:50px !important;
         background-color: #fff !important;
         box-shadow: 2px 3px 4px 3px rgb(54, 54, 54);
+        font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
 
     }
 
@@ -979,6 +988,7 @@
     .work a{
         text-decoration: none ;
         color: #fff;
+        font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
 
     }
 
@@ -1204,7 +1214,12 @@
         padding-bottom: 0
     }
 
+    footer p{
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+    }
+
     footer a{
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
         text-decoration: none;
         color: #627482 !important;
     }
@@ -1236,6 +1251,10 @@
     .fa{    
         cursor: pointer;
     }
+
+    textarea {
+        resize: none;
+      }
 
 
     .get-in-touch {
@@ -1300,7 +1319,7 @@
         -moz-transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
-        font-size: calc(14px + (17 - 14) * ((100vw - 360px) / (1600 - 360))) !important
+        font-size: calc(12px + (17 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 
     }
 
@@ -1346,6 +1365,17 @@
         letter-spacing: 2px;
     }
 
+    .info{
+        color: red;
+        font-size: calc(1px + (10 - 1) * ((100vw - 320px) / (1600 - 360))) !important ;
+    }
+
+    .intro-card{
+        border:none;
+        background:transparent !important;
+        border-left:calc(2px + (4 - 2) * ((100vw - 320px) / (1600 - 360)))  solid #fff !important;
+    }
+
    
     </style>
 
@@ -1367,28 +1397,28 @@
                 </div>
                 </nav>
             </header>
-            <div class="row intro text-light rellax " >
-                    <div class="col-12">
-                        <h6><span><b> Hello ! </b></span></h6>
-                        <h2 class="mb-0">I Am Prathamesh</h2>
-                        <div class="row no-gutters my-3">
-                            <div class="col "><hr  class="line" ></div>
-                            <div class="col ml-2 d-flex"><small> Web Developer</small></div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
-                        </ul>
+            <div class="row  intro text-light rellax " >
+                <div class="col-12">
+                    <h6><span><b> Hello ! </b></span></h6>
+                    <h2 class="mb-0">I Am Prathamesh</h2>
+                    <div class="row no-gutters my-3">
+                        <div class="col "><hr  class="line" ></div>
+                        <div class="col ml-2 d-flex"><small> Web Developer</small></div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <section class="about-me px-3" id="about">
     <div class="row mt-55 d-flex justify-content-center">
-        <div class="col-xl-8 col-lg-10 col-sm-12 ">
+        <div class="col-xl-10 col-lg-10 col-sm-12 ">
                 <div class="media  flex-column flex-md-row ">
-                    <img class="align-self-center img-fluid" src="https://i.imgur.com/ThKkKGx.png" alt="DP">
+                    <img class="align-self-center img-fluid" src="https://i.imgur.com/54jNVkn.png" alt="DP">
                     <div class="media-body ml-lg-5 ">
                         <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
                         <hr class="my-0 me-line" align="left">
@@ -1716,7 +1746,7 @@
                 </div>
             </div>
             <div class="col-12 m-4">
-                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-3">View All</span> <i class="fa fa-arrow-right"></i></a> 
+                    <a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-sm-3 mr-2  ">View All</span> <i class="fa fa-arrow-right"></i></a> 
                 </div>
         </div>
         </div>
@@ -1772,15 +1802,15 @@
                     <div class="col-lg-2 col-md-3 col-sm-3 col-12">
                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
                         <p class="mb-1">Plot No 14,Gitai Banglo  Dhankawadi</p>
-                        <p>Dist Pune</p>
+                        <p>Pune</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-6 col-auto col-sm-6 col-12 my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-auto col-sm-6 col-12 my-md-0 mt-5 order-sm-1 order-3 align-self-end pl-sm-auto pl-0">
                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-3"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-3"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights ml-3 "><span>&#9400;</span> Chatorikar All Rights Reserved.</small>
                     </div>
                     <div class="col-auto order-1 align-self-end ">
-                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>Prathamesh J. Chatorikar</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> prathameshchatorikar29@gmail.com</small>
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>Prathamesh J. Chatorikar</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> chatorikar003@gmail.com</small>
                     </div>
                     
                 </div>

@@ -1,143 +1,452 @@
-<!doctype html>
-                        <html>
-                            <head>
-                                <meta charset='utf-8'>
-                                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>Snippet - BBBootstrap</title>
-                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-                                <style> body {
-     background-color: #90CAF9
- }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
- .container {
-     margin-top: 250px
- }
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Brickshare Login</title>
 
- .breadcrumb>li+li:before {
-     content: "" !important
- }
+    <style type="text/css">
 
- .breadcrumb {
-     padding: 19px;
-     font-size: 14px;
-     color: #aaa !important;
-     letter-spacing: 2px;
-     border-radius: 5px !important
- }
+    *{
+        margin: 0;
+        padding: 0
+    }
 
- .first ol {
-     border-top-right-radius: 200px !important;
-     border-bottom-right-radius: 200px !important
- }
 
- .first-1 {
-     background-color: white !important
- }
+    body {
+        overflow-x: hidden;
+        background-color: rgb(203, 228, 241);
+        padding-bottom: 0 !important;
+        height: 100%;
+        position: absolute;
+        background-color: #000000;
+        background:url('https://i.imgur.com/Kt8ttqN.gif')no-repeat center center fixed;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size: cover;
+        width: 100%;
+    }
 
- a {
-     text-decoration: none !important;
-     color: #aaa !important
- }
 
- a:focus,
- a:active {
-     outline: none !important;
-     box-shadow: none !important
- }
 
- img {
-     vertical-align: bottom
- }
+    html {
+        height: 100%
+    }
 
- .first span {
-     color: white
- }
 
- .active-1 {
-     font-size: 13px !important;
-     padding-bottom: 12px !important;
-     padding-top: 12px !important;
-     padding-right: 25px !important;
-     padding-left: 25px !important;
-     border-radius: 200px !important;
-     background-color: white !important
- }
+    .card0 {
+        margin: 50px 12px 40px 12px;
+        border: 0;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px -2.5px;
+        font-family: 'Bree Serif', serif;
 
- .first ol {
-     background-color: rgb(51, 0, 80) !important
- }
+    }
 
- .first{
-    transform: translate(30% ,80%) ;
-}
+    .side_img{
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+        height: 800px;
+        border-radius: 20px;
 
- @media (max-width: 767px) {
-     .breadcrumb {
-         font-size: 10px
-     }
+    }
 
-     .breadcrumb-item+.breadcrumb-item {
-         padding-left: 0
-     }
+    .card1 {
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        height: 100%;
+        background-color: #EDE7F6;
+        position: relative;
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important
+    }
 
-     img {
-         width: 11px;
-         height: 11px;
-         vertical-align: middle
-     }
 
-     .active-1 {
-         font-size: 10px !important;
-         padding-right: 8px !important;
-         padding-left: 8px !important;
-         width: 100% ! important
-     }
+    .txt1{
+        float: left !important;
+       
+        font-family: 'Bree Serif', serif;
+    }
 
-     .breadcrumb {
-         letter-spacing: 1px !important
-     }
+    .txt2{
+        float: right !important;
+        font-family: 'Bree Serif', serif;
+    }
 
-     .breadcrumb>* div {
-         max-width: 60px
-     }
 
-	.first{
-	    transform: translate(0% ,10%) ;
-	}
+    .title {
+        font-size: 33px;
+        color: #000000;
+        padding-bottom: 20px;
+        font-family: 'Bree Serif', serif;
+        word-spacing: 5px;
 
-   
+    }
 
- }</style>
-                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-                                <script type='text/javascript'>   $(document).ready(function(){
+    .title_footer
+    {
+        width: 80%;
+        color:#BDBDBD;
+        padding-bottom: 20px;
+        line-height: 30px;
+        font-family: 'Bree Serif', serif;
+    }
 
-   $('.first ol li a.active-1 span').css('color' , 'rgb(51, 0, 80)');
-   $('.first ol li a').click(function() {
-   $('.first ol li a.active-1').find('span').css('color' , 'white');
-   $('.first ol li a.active-1').removeClass('active-1');
-   $('.first ol li a.active-1').addClass('text-dark');
-   $(this).closest('a').addClass('active-1');
-   $('.first ol li a.active-1').find('span').css('color' , 'rgb(51, 0, 80)');
-   });
+    .placeicon {
+        font-family: fontawesome !important
+    }
 
-   });</script>
-                            </head>
-                            <body>
-                            <div class="container container-md-fluid">
-    <div class="row ">
-        <div class="col-auto col-md-10 ">
-            <nav aria-label="breadcrumb " class="first d-md-flex bg-violet">
-                <ol class="breadcrumb indigo lighten-6 first-1 shadow-lg mb-5 ">
-                    <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>home</span></a><img class="ml-md-3" src="https://img.icons8.com/offices/100/000000/double-right.png" width="20" height="20"> </li>
-                    <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>about</span></a><img class="ml-md-3" src="https://img.icons8.com/offices/100/000000/double-right.png" width="20" height="20"></li>
-                    <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>team</span></a><img class="ml-md-3" src="https://img.icons8.com/offices/100/000000/double-right.png" width="20" height="20"> </li>
-                    <li class="breadcrumb-item font-weight-bold mr-0 pr-0"><a class="black-text active-1" href="#"><span>Payam Daliri</span></a> </li>
-                </ol>
-            </nav>
+    .card2 {
+        padding: 25px;
+        margin: 0;
+        height: 100%;
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important
+    }
+
+    #customCheck1{
+        color:#BDBDBD;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .form-card {
+        height: 100%;
+        position: absolute;
+    }
+
+    .form-card input,
+    .form-card textarea {
+        padding: 15px 10px 15px 10px;
+        border: none;
+        border: 1px solid lightgrey !important;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: 'Bree Serif', serif;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+    }
+
+    .form-card input:focus,
+    .form-card textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        font-weight: bold;
+        border: 1px solid rgb(122, 11, 11);
+        outline-width: 0
+    }
+
+    .form-card .btn {
+        font-weight: bold;
+        width: 100%;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        font-size: 18px !important;
+    }
+
+
+  	.fa{
+  		vertical-align:super !important;
+  	}
+
+
+    .form-control {
+
+		height: 46px;
+    }
+    .bottom {
+        bottom: 0;
+        position: absolute;
+        width: 100%
+    }
+
+    @media (max-width: 768px) {
+
+        .card1 {
+        display: none;
+        }
+
+        .side_img{
+            display: none;
+        }
+
+        .card2 {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important
+        }
+
+        .form-card {
+            position: relative;
+        }
+
+      
+      
+    }
+
+    .fit-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: top left;
+    }
+
+    .radio-group {
+        position: relative;
+        margin-bottom: 25px
+    }
+
+    .radio {
+        display: inline-block;
+        border-radius: 0;
+        box-sizing: border-box;
+        border-top: 3px solid #E8F5E9;
+        cursor: pointer;
+        margin: 8px 10px 8px 0px;
+        transition: 0.5s;
+        width: 20%;
+    }
+
+
+
+    .radio:hover {
+        border-top: 3px #039BE5 solid;
+        transition: 0.5s;
+    }
+
+
+
+    .bottom {
+        bottom: 80px;
+        left: 30px;
+        position: absolute;
+    }
+
+  	.inputWithIcon i{
+  		top:18px !important;
+  	}
+
+    .btn-primary{
+        color: white;
+        box-shadow: 0px 10px -14px 14px #FFF;
+        color: white !important;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+    }
+
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited,
+    .btn-primary:focus {
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+        background-repeat: repeat-x;
+        background-color: rgb(55, 124, 235);
+    }
+
+
+    .btn-default:hover,
+    .btn-default:active,
+    .btn-default:visited,
+    .btn-default:focus {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+        background-repeat: repeat-x;
+        background-color: rgb(248, 248, 248);
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 20px rgba(255,255,255,0.15) inset, 0 1px 0 0 #adadad;
+    }
+
+    .btn-default{
+        color:#039BE5  !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 20px rgba(255,255,255,0.15) inset, 0 1px 0 0 #adadad;
+        font-family: 'Bree Serif', serif;
+        border-radius: 0px;
+        font-size: 20px !important;
+        transition: 0.5s;
+    }
+
+    input[type="text"]  {
+        width: 100%;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    input[type="text"]:focus {
+        border-color: dodgerBlue !important;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    input[type="password"]:focus {
+        border-color: dodgerBlue !important;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    .inputWithIcon input[type="text"] {
+        padding-left: 40px;
+    }
+
+    .inputWithIcon {
+        position: relative;
+    }
+
+    .inputWithIcon i {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        transition: 0.3s;
+    }
+
+    .inputWithIcon input[type="text"]:focus + i {
+        color: dodgerBlue;
+    }
+
+
+    input[type="password"]  {
+        width: 100%;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    .inputWithIcon input[type="password"] {
+        padding-left: 40px;
+    }
+
+
+    .inputWithIcon input[type="password"]:focus + i {
+        color: dodgerBlue;
+    }
+
+    .a{
+      float: left !important;
+    }
+
+    .b{
+      float: right !important;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .bottom {
+            bottom: 0 !important;
+            position: relative;
+        }
+        .card1 {
+            display: none;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid my-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-11 col-lg-10 col-xl-9 pl-0 ml-0">
+                <div class="card card0">
+                    <div class="row">
+                        <div class="col-md-6 d-block p-0 m-0 box">
+                            <div class="col-12 fit-image"> <img src="https://i.imgur.com/ENQ5JBE.gif" class="side_img">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 px-sm-5">
+                            <div class="card rounded-0 border-0 card2 ">
+                                <div class="form-card pt-5">
+                                        <h1 class="title">
+                                                <font>Welcome to</font>
+                                                <font style="color:#039BE5 ;">Brickshare</font>
+                                        </h1>
+                                    <h4 class="title_footer"> <em>We make it easy for everyone to invest in real estate.</em></h4>
+                                    <div class="radio-group     ">
+                                        <div class='radio aa' data-value="">
+                                            <!-- Link to Log in -->
+                                        </div>
+
+                                        <div class='radio' data-value="">
+                                            <!-- Link to Create Profile -->
+                                        </div> <br>
+                                    </div>
+                                    <div class="p-1 col-md-12">
+                                        <form class="form-horizontal ">
+                                            <!-- User Name Input -->
+                                            <div class="form-group row justify-content-center px-1 inputWithIcon">
+                                            <div class="col-11 px-0"> <input type="text" placeholder=" User name" class="form-control border-info placeicon "> <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i></div>
+                                            </div> <!-- Password Input -->
+                                            <div class="form-group row justify-content-center px-1 inputWithIcon" >
+                                            <div class="col-11 px-0"> <input type="password" placeholder="Password" class="form-control border-info placeicon"> <i class="fa fa-key" aria-hidden="true"></i></div>
+                                            </div> <!-- CheckBox Remember Me-->
+                                            <div class="form-group row justify-content-center px-3 pb-5">
+                                                <div class="col-12">
+                                                    <div class="col-12">
+                                                        <div class="row  justify-content-between pb-5">
+                                                            <div class="col a px-0 mx-0">
+                                                                <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" class="custom-control-input checkbox-muted "> <label for="customCheck1" class="custom-control-label text-muted">Remember Me</label> </div>
+                                                            </div> <!-- Forgot Password Link -->
+                                                            <div class="col-auto px-0 mx-0 b"> <span><a href="#" id="customCheck1" ><b>Forgot Password?</b></a></span> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- Log in Button -->
+                                            <div class="row justify-content-between">
+                                                    <div class="col-md-6 mb-3"> <input type="submit" value="Login" class="btn btn-primary"> </div>
+                                                    <div class="col-md-6 mb-5"> <input type="submit" value="Create Profile" class=" btn btn-default"> </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row  justify-content-center  ">
+					                <div class="col align-self-end">
+
+                                        <div> <span class=" txt1">Or Login with </span> <span class="social"><a class="txt2 mx-3" href="#" >Facebook</a></span> <span class="social"><a class="txt2 mx-3" href="#"> Linkedin </a></span><span class="social "><a class="txt2 mx-3" href="#">Google</a></span></div>	
+					                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-                            </body>
-                        </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
