@@ -51,6 +51,11 @@
 
         }
 
+        .menu  ul {
+            padding-inline-start: 0 !important ;
+        }
+       
+
         .jarallax>.jarallax-img {
             position: absolute;
             object-fit: cover ;
@@ -145,7 +150,7 @@
         }
 
         .homeLink:hover {
-            background-color: #232B2B !important;
+            background-color: transparent !important;
             color: #fff !important;
         }
 
@@ -187,9 +192,9 @@
 
 
         .intro .fa {
-            padding: calc(5px + (13 - 5) * ((100vw - 360px) / (1600 - 360))) !important;
-            font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (1600 - 360))) !important;
-            width: calc(32px + (48 - 32) * ((100vw - 360px) / (1600 - 360))) !important;
+            padding: calc(7px + (13 - 7) * ((100vw - 360px) / (1600 - 360))) !important;
+            font-size: calc(14px + (20 - 14) * ((100vw - 360px) / (1600 - 360))) !important;
+            width: calc(37px + (48 - 37) * ((100vw - 360px) / (1600 - 360))) !important;
             text-align: center;
             line-height: 20px;
             text-decoration: none;
@@ -272,8 +277,12 @@
             height: 1px;
         }
 
-        small {
-            font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+        .intro .badge-pill{
+            font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+        }
+
+        .intro small {
+            font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
         .intro h2 {
@@ -329,11 +338,8 @@
 
 
        .btn {
-            display: inline-block;
-            margin-right: 20px;
             letter-spacing: 1px;
             border-radius: 0px !important;
-            border: 1px solid transparent
         }
 
         .btn-round {
@@ -365,19 +371,21 @@
 
 
          .highlight-button {
-            border: 2px solid #000;
+            border: calc(1px + (2 - 1) * ((100vw - 320px) / (1600 - 320)))  solid #000;
             display: inline-block;
-            padding: 4px 10px 5px;
-            font-size: 12px;
+            font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320))) !important;
             color: #000;
             background-color: transparent
         }
 
+
+
           .highlight-button:hover {
             background-color: #000;
-            border: 2px solid #000;
             color: #fff
         }
+
+        
 
           .highlight-button i {
             color: #000
@@ -458,7 +466,7 @@
         }
 
         .about_details span {
-            font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
             width: 43%;
             color: #222;
             font-weight: 500;
@@ -476,8 +484,12 @@
 
             color: #1461ff;
             font-weight: 400;
-            margin: 40px 0 20px;
+            margin:calc(20px + (40 - 20) * ((100vw - 320px) / (1600 - 320))) 0 calc(20px + (20 - 20) * ((100vw - 320px) / (1600 - 320))) !important;
             font-family: 'Raleway', sans-serif !important;
+        }
+
+        .about-me .list-unstyled{
+            padding-inline-start: 0 !important;
         }
         .about-me p{
             font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
@@ -545,6 +557,27 @@
             color:#202125 !important;
         }
 
+        .about-me .services-line:after {
+            border-radius: 5px ;
+            content: '';
+            display: block;
+            border-top: 3px solid #000;
+            margin-top: 0.3em;
+            width: 40%x;
+            color:#202125 !important;
+        }
+
+        .menu .services-line:after {
+            border-radius: 5px ;
+            content: '';
+            display: block;
+            border-top: 2px solid #fff;
+            margin-top: 0.3em;
+            color:#202125 !important;
+            transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+
         
         .work .services-line:after {
             border-radius: 5px ;
@@ -603,7 +636,7 @@
         .services .card {
             border-radius: 0px !important;
             box-shadow: 1px 1px 5px 0px rgb(88, 88, 90);
-            transition: 0.6s
+            transition: 0.6s;
         }
         
         .services .card-header {
@@ -626,17 +659,28 @@
 
         .services .card p{
             font-family: 'Raleway', sans-serif !important;
-            word-break: break-all;   
-            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+            font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
             line-height: calc(20px + (25 - 20) * ((100vw - 320px) / (1600 - 320))) !important;;;
             margin: auto auto;
+            -webkit-hyphens: auto !important;
+             -moz-hyphens: auto !important;
+            hyphens: auto !important;
+            word-break: break-word;
+            display: block;
+  overflow: hidden;
+
+  text-align:justify;
+  -webkit-hyphens:auto;
+  -webkit-hyphenate-character:"\2010";
+  -webkit-hyphenate-limit-after:1;
+  -webkit-hyphenate-limit-before:3;
+  -moz-hyphens:auto;
         }
 
         .services .card{
             margin-top: 100px !important;
             margin: 0 auto;
             width: calc(300px + (425 - 300) * ((100vw - 320px) / (1600 - 320))) !important;;
-            height: calc(330px + (355 - 330) * ((100vw - 320px) / (1600 - 320))) !important;
         }
 
         @media (max-width: 880px){
@@ -899,7 +943,7 @@
         border-color:  #fff;
         display: inline-block;
         margin-top: 5vw !important;
-        padding: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320)))  calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320))) calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+        padding: calc(9px + (16 - 9) * ((100vw - 320px) / (1600 - 320)))  calc(14px + (30 - 14) * ((100vw - 320px) / (1600 - 320))) calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
         color: #000;
         border-radius:50px !important;
         background-color: #fff !important;
@@ -1079,7 +1123,7 @@
         border-radius: 50%;
         background: #fff;
         right: -12px;
-        border: 3px solid #fffb00;
+        border: 3px solid #ff9900;
         z-index: 9;
         top: 15px;
         border: radius 50px !important;
@@ -1136,10 +1180,12 @@
         left: 10px;
         top: 22px;
     }
+
+
     
     
 
-    /* media */ 
+    
     
     @media(max-width:600px) {
         .experience  .timeline:after {
@@ -1148,7 +1194,7 @@
         .experience .container-1 {
             width: 100%;
             padding-left: 49px;
-            padding-right: 20px;
+            padding-right: 12px;
         }
         .experience  .container-1:after {
             left: 11px
@@ -1211,7 +1257,9 @@
 
 
     .experience .btn{
-        padding:calc(10px + (12 - 10) * ((100vw - 320px) / (1600 - 320)))  calc(14px + (17 - 14) * ((100vw - 320px) / (1600 - 320)))
+        font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        padding:calc(9px + (12 - 9) * ((100vw - 320px) / (1600 - 320)))  calc(13px + (17 - 13) * ((100vw - 320px) / (1600 - 320)))
     }
 
     .experience .jarallax {
@@ -1232,7 +1280,6 @@
 
     .experience p{
         font-family: 'Raleway', sans-serif !important;
-        word-break: break-all;   
         font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
 
     }
@@ -1398,7 +1445,7 @@
 
     .seo{
         text-align: end !important;
-        letter-spacing: 2px;
+        letter-spacing: 5px;
     }
 
     .info{
@@ -1422,21 +1469,68 @@
 
    
     .modal h5{
-        font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+        font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
 
     }
 
     .modal li{
         font-size: calc(9px + (15 - 9) * ((100vw - 320px) / (1600 - 320))) !important;
-
+        margin-bottom: calc(9px + (15 - 9) * ((100vw - 320px) / (1600 - 320))) !important;
     }
 
-    ul{
+    .modal{
+        border-radius:0 !important;
+    }
+   
+
+    .modal ul{
         padding-inline-start: calc(15px + (40 - 15) * ((100vw - 320px) / (1600 - 320))) !important;;
     }
-   
 
-   
+    .modal-backdrop {
+        background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(0, 162, 255) 100.2%)
+    }
+
+    .modal-footer .btn-primary{
+        border:none;
+        padding:  calc(7px + (9 - 7) * ((100vw - 320px) / (1600 - 320)))  calc(10px + (17 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+        font-size: calc(9px + (14 - 9) * ((100vw - 360px) / (1600 - 360))) !important;
+        background-color: #000 !important ;
+    }
+
+    .modal .stack{
+        margin-bottom:2px !important;
+    }
+
+    .modal .stack:first-child{
+        margin-top: 5px !important;
+
+    }
+
+    .modal a{
+        text-decoration: none;
+    }
+
+    u {    
+        border-bottom: 1px dotted #000;
+        text-decoration: none;
+    }
+
+    .about-me h4 {
+        font-size: calc(22px + (35 - 22) * ((100vw - 320px) / (1600 - 320))) !important; ;
+    }
+
+     h2{
+        font-size: calc(35px + (44 - 35) * ((100vw - 320px) / (1600 - 320))) !important; ;
+
+    }
+
+    .view-all{
+        font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important; ;
+
+    }
+
+ 
     </style>
 
 
@@ -1451,15 +1545,17 @@
                 <nav class="navbar fixed-top">
                 <a class="navbar-brand homeLink align-self-center" href="#">PC</a><span class="name ml-2 text-light cursor-pointer" onclick="parent.location='/'"> <b>Prathamesh J. Chatorikar</b> </span>
                 <div class="ml-auto">
-                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="home" href="#">Home</a>
-                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="about" href="#">About</a>
-                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" data-value="my-work" href="#">Work</a>
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link "  id="#Home-me" data-value="home" href="#">Home</a>
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" id="#about-mee" data-value="about" href="#">About</a>
+                    <a class="px-sm-4 px-1 text-right navbar-brand nav-link" id="#work-me" data-value="my-work" href="#">Work</a>
                 </div>
                 </nav>
             </header>
             <div class="row vl intro text-light rellax " >
                 <div class="col-12">
-                    <h6 class="mb-4"><span> Websites promote you 24X7 : No employee will do that.</span></h6>
+                    
+                    <h6 class="mb-sm-2"><span> Websites promote you 24X7 : No employee will do that.</span></h6>
+                    <span class="badge badge-pill badge-warning">Hello</span>
                     <h2 class="mb-0">I'm Prathamesh</h2>
                     <div class="row  no-gutters my-sm-3 ">
                         <div class="col "><hr class="line align-self-center" ></div>
@@ -1467,7 +1563,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled p-0 m-0">
                         <li><a href="https://www.facebook.com/prathamesh.chatorikar.5" target="_blank" class="fa fa-facebook"></a><a href="#" target="_blank" class="fa fa-instagram"></a><a target="_blank" href="https://github.com/Pratham19Feb" class="fa fa-github"></a><a target="_blank" href="#" class="fa fa-linkedin"></a></li>
                     </ul>
                 </div>
@@ -1479,21 +1575,22 @@
     <div class="row mt-55 d-flex justify-content-center">
         <div class="col-xl-10 col-lg-10 col-sm-12 ">
                 <div class="media  flex-column flex-md-row ">
-                    <img class="align-self-center img-fluid" src="https://i.imgur.com/54jNVkn.png" alt="DP">
-                    <div class="media-body ml-lg-5 ">
-                        <h4 class="mb-2 mt-md-0 mt-5">About Me</h4>
-                        <hr class="my-0 me-line" align="left">
+                    <img class="align-self-center img-fluid mr-md-3" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1581422634/IMG_20200209_214929_7_gioqfp.png" alt="DP">
+                    <div class="media-body ml-lg-5 ml-md-4 ml-sm-3 ml-2">
+                        <h4 class="mb-2 mt-md-0 mt-5 services-line">About Me</h4>
                         <h3>I'm Professional web Developer having 10 Years Of Experience.</h3>
-                        <p>I’m constantly learning web technologies and other design related topics, 
-                            currently playing around with Javascript and JQuery. I’m a skilled in many 
-                            areas of design and development</p>
+                        <p>I’m a skilled in many 
+                            areas of design and development.Building state-of-the-art, easy to use, user-friendly websites 
+                            and applications is truly a passion of mine 
+                            and I am confident I would be an excellent addition to your organization.
+                            When I'm not coding, tweeting or pushing pixels, you'll find me at swimming pool or hanging out with my friends cum brothers</p>
                         <div class="about_details mt-2">
                             <div class="row my-5">
-                                <div class="col-lg-6 col-12">
+                                <div class="col-xl-6 col-12">
                                     <ul class="list-unstyled my-3 ">
                                         <li>
                                             <div class="ct_about">
-                                                <span><i class="fa fa-map-marker"></i> Location</span>
+                                                <span><i class="fa fa-map-marker"></i> &nbsp; &nbsp;Location</span>
                                                 <span class="info text-muted">: PICT Pune</span>
                                             </div>
                                         </li>
@@ -1505,7 +1602,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-6 col-12">
+                                <div class="col-xl-6 col-12">
                                     <ul class="list-unstyled my-3">
                                         <li>
                                             <div class="ct_about">
@@ -1516,7 +1613,7 @@
                                         <li>
                                             <div class="ct_about">
                                                 <span><i class="fa fa-envelope"></i> Email</span>
-                                                <span class="info text-muted">:chatorikar@gmail.com</span>
+                                                <span class="info text-muted">:chatorikar003@gmail.com</span>
                                             </div>
                                         </li>
                                     </ul>
@@ -1546,10 +1643,10 @@
                         <div class="container-1 left">
                              <div class="content border-0 card d-block ">
                                 <div class="row">
-                                    <div class="col mb-3"><h5 class="mb-3">Web Developer  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- BBBootstrap Comapany</small> <br><small>- Oct 2019 - Jan 2020</small> </div>
+                                    <div class="col mb-3"><h5 class="mb-3">Web Developer  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >&#10148;&nbsp; BBBootstrap Comapany</small> <br><small>&#10148;&nbsp; Oct 2019 - Jan 2020</small> </div>
                                 </div> 
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                   <p>BBBootstrap is an element gallery for web designers, anybody who is using Bootstrap will &nbsp; find this comapany essential in their craft.</p>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-BB" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-sm-4 mt-3 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1557,10 +1654,10 @@
                         <div class="container-1 right">
                              <div class="content border-0 card d-block ">
                                 <div class="row">
-                                    <div class="col mb-3"><h5 class="mb-3">Farmer Portal  <span class="badge badge-pill badge-primary ">Project</span> </h5>  <small >- Internal Hackathon 2020</small> <br><small>- Jan 2020</small> </div>
+                                    <div class="col mb-3"><h5 class="mb-3">Farmer Portal.  <span class="badge badge-pill badge-primary ">Project</span> </h5>  <small >&#10148;&nbsp; Internal Hackathon 2020</small> <br><small>&#10148;&nbsp; Jan 2020</small> </div>
                                 </div> 
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                   <p>This was problem statement of Smart India Hackathon 2020.Basically deals with some platform for Farmers to sell their produce at a better rate. </p>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-portal" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-sm-4 mt-3 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1568,10 +1665,10 @@
                         <div class="container-1 left">
                                <div class="content border-0 card d-block ">
                                 <div class="row">
-                                    <div class="col mb-3"><h5 class="mb-3">Campus Ambassador  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >- Internshala Comapany</small> <br><small>- Aug 2019 - Oct 2019</small> </div>
+                                    <div class="col mb-3"><h5 class="mb-3">Campus Ambassador  <span class="badge badge-pill badge-success ">Internship</span> </h5>  <small >&#10148;&nbsp; Internshala Comapany.</small> <br><small>&#10148;&nbsp; Sept 2019 - Nov 2019.</small> </div>
                                 </div> 
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-internshala" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                   <p>Internshala Student Partner 15 (ISP) is a 70day transformational work-from-college program aimed at building the leaders of tomorrow.</p>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-internshala" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-sm-4 mt-3 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1579,10 +1676,10 @@
                         <div class="container-1 right">
                              <div class="content border-0 card d-block">
                                 <div class="row">
-                                    <div class="col mb-3"><h5 class="mb-3">Event Management<span class="badge badge-pill badge-primary project">Project</span> </h5>  <small >- DBMS Mini Project</small> <br><small>- June 2019 - Sept 2019</small> </div>
+                                    <div class="col mb-3"><h5 class="mb-3">Event Management<span class="badge badge-pill badge-primary project">Project</span> </h5>  <small >&#10148;&nbsp; DBMS Mini Project</small> <br><small>&#10148;&nbsp; June 2019 - Aug 2019</small> </div>
                                 </div> 
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                   <p>Major problems faced while organizing an event in the college was getting permissions for using certain area or accessories.Developed a software which can ease management of an event. By automizing the inter-administration communication..</p>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-Event" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-sm-4 mt-3 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1592,8 +1689,9 @@
                                 <div class="row">
                                     <div class="col mb-3"><h5 class="mb-3">ERP Software<span class="badge badge-pill badge-primary ">Project</span></h5><small >- Commerical Project</small> <br><small>- May 2019 - Aug 2019</small> </div>
                                 </div> 
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse placeat a. Labore in explicabo soluta doloremque libero, quam, vero!</p>
-                                  <div class="row"><div class="col-auto"><a href="#" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-4 " data-abc="true"> <span >View Details</span> </a> </div>
+                                   <p>It’s true that ERP software requires a major investment.ERP manages a number of business functions through streamlining and automating daily business operations .So trying to bulit custom ERP for mechanical firm.
+                                   </p>
+                                  <div class="row"><div class="col-auto"><a href="#" data-toggle="modal" data-target="#modelId-ERP" class="highlight-button btn btn-large button xs-margin-bottom-five  mt-sm-4 mt-3 " data-abc="true"> <span >View Details</span> </a> </div>
                                </div>
                             </div>
                         </div>
@@ -1602,19 +1700,22 @@
                 </div>
             </div>
         </div>
+        
         <div>
             <div class="modal fade" id="modelId-internshala" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered justify-content-center" role="document">
+                <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
                     <div class="modal-content">
                           
                         <div class="modal-body p-0 m-0">
-                            <div class="container-fluid px-0 mx-0">
+                            <div class="container-fluid px-0 mx-0 pb-0 mb-0">
                                 <div class="row">
                                     <div class="col">
                                         <div class="card border-0">
-                                            <img class="card-img-top mx-0 px-0" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1581333626/ISP15.png_k5tc9p.png" alt="certificate"><hr class="mb-0">
-                                            <div class="card-body">
-                                                <h5 class="text-center font-weight-bold mb-3" ><i><b>Marketing Intern </b>,</i> <span> <small> April 2019–June 2018</small></span> </h5>
+                                            <img class="card-img-top mx-0 px-0" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1581358117/ISP15_20Completion_20Letter.pdf_umed8m.png" alt="certificate"><hr class="mb-0">
+                                            <div class="card-body pb-0">
+                                                <h5 class="text-center font-weight-bold mb-sm-4 mb-3" ><b>Marketing Intern </b> </h5>
+                                               
+                                               
                                                 <ul>
                                                     <li>Promoted <b><u>Internshala</u></b> internships among my peers and assist them with internship-related queries</li>
                                                     <li>Helped my peers to learn new skills via Internshala Trainings</li>
@@ -1626,12 +1727,203 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-primary">Save</button>
+                        <div class="modal-footer border-0 pt-sm-auto pt-0 m-sm-3">
+                                <a  data-dismiss="modal" href="#" class=" btn btn-primary  " data-abc="true"> <span >Got it</span> </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="modelId-BB" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
+                        <div class="modal-content">
+                              
+                            <div class="modal-body p-0 m-0">
+                                <div class="container-fluid px-0 mx-0 pb-0 mb-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card border-0">
+                                                <img class="card-img-top mx-0 px-0" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1581329903/certificate_prathamesh__hatorikar_20_1_.pdf_xgjjct.png" alt="certificate">
+                                                <div class="card-body pb-0">
+                                                    <h5 class="text-center font-weight-bold my-sm-4 my-3" ><b> Web Developer </b>  </h5>
+                                                   
+                                                   
+                                                    <ul>
+                                                        <li>Designed and created responsive snippets in HTML5, CSS ,Bootstrap and JQuery to support for clients project.</li>
+                                                        <li>Demonstrated the ability to work diligently under pressure to meet deadlines.</li>
+                                                        <li>Excelled in user experience and user interfaces.</li>
+                                                        <li>Translate designs to front-end code.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 pt-sm-auto  m-sm-3 pt-0 m-sm-3">
+                                    <a  data-dismiss="modal" href="#" class=" btn btn-primary  " data-abc="true"> <span >Got it</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="modal fade" id="modelId-portal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
+                        <div class="modal-content">
+                              
+                            <div class="modal-body p-0 m-0">
+                                <div class="container-fluid px-0 mx-0 pb-0 mb-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card border-0">
+                                                <div class="card-body pb-0">
+                                                    <h5 class="text-center font-weight-bold my-sm-4 my-3" ><b> Farmer Portal </b>  </h5>
+                                                   
+                                                   
+                                                    <ul>
+                                                        <li>System that provides farmers an interface to sell their produce , and connect with the buyers all over India.</li>
+                                                        <li>Simple interface that works on mobile, SMS to upload produce details and respond via phone and SMS (taking care of digital divide).</li>
+                                                        <li>Interface for anyone to buy the produce/vegetable – initially visit the place and buy or have courier service integrated to deliver the vegetables</li>
+                                                        <li>Purpose of this analysis and who will benefit Farmers, Restaurant owners, Buyers , Courier Companies, Delivery Agencies, Vegetable Vendors.</li>
+                                                        <li>
+                                                            <span class="techno">Technology Stack :</span>
+                                                            <ul class="list-group">
+                                                                <li class="stack"> HTML5 , CSS ,Bootstrap , JQuery</li>
+                                                                <li class="stack">pyairmore 0.2.1a1 and Django</li>
+                                                                <li class="stack">Firbase</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Source Code : <a href="https://github.com/pratham19Feb" target="_blank" ><u>Click here</u></a>  </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 pt-sm-auto  m-sm-3 pt-0 ">
+                                <a  data-dismiss="modal" href="#" class=" btn btn-primary " data-abc="true"> <span >Got it</span> </a>
+                            </div>
+                        </div> <div class="modal fade" id="modelId-portal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
+                                    <div class="modal-content">
+                                          
+                                        <div class="modal-body p-0 m-0">
+                                            <div class="container-fluid px-0 mx-0 pb-0 mb-0">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="card border-0">
+                                                            <div class="card-body pb-0">
+                                                                <h5 class="text-center font-weight-bold my-sm-4 my-3" ><b> Farmer Portal </b>  </h5>
+                                                               
+                                                               
+                                                                <ul>
+                                                                    <li>System that provides farmers an interface to sell their produce , and connect with the buyers all over India.</li>
+                                                                    <li>Simple interface that works on mobile, SMS to upload produce details and respond via phone and SMS (taking care of digital divide).</li>
+                                                                    <li>Interface for anyone to buy the produce/vegetable – initially visit the place and buy or have courier service integrated to deliver the vegetables</li>
+                                                                    <li>Purpose of this analysis and who will benefit Farmers, Restaurant owners, Buyers , Courier Companies, Delivery Agencies, Vegetable Vendors.</li>
+                                                                    <li>
+                                                                        <span class="techno">Technology Stack :</span>
+                                                                        <ul class="list-group">
+                                                                            <li class="stack"> HTML5 , CSS ,Bootstrap , JQuery</li>
+                                                                            <li class="stack">Django</li>
+                                                                            <li class="stack">Firbase</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>Source Code : <a href="https://github.com/pratham19Feb" target="_blank" ><u>Click here</u></a>  </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0 pt-sm-auto  m-sm-3 pt-0 ">
+                                            <a  data-dismiss="modal" href="#" class=" btn btn-primary " data-abc="true"> <span >Got it</span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                 <div class="modal fade" id="modelId-Event" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
+                        <div class="modal-content">
+                              
+                            <div class="modal-body p-0 m-0">
+                                <div class="container-fluid px-0 mx-0 pb-0 mb-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card border-0">
+                                                <div class="card-body pb-0">
+                                                    <h5 class="text-center font-weight-bold my-sm-4 my-3" ><b> Event Management </b>  </h5>
+                                                   
+                                                   
+                                                    <ul>
+                                                        <li>Create a formatted application letter addressed to the Principal regarding the date of the event.</li>
+                                                        <li> If any changes were requested, another application would have to be drafted instead of amending the original one.</li>
+                                                        <li>Following the approval of conducting the event, the user would have to draft another application addressed to the principal regarding the classrooms/labs which would be used in the event.</li>
+                                                        <li>On approval of this one would have to get the same application signed by the Head of Department under who’s jurisdiction the class/lab may lie</li>
+                                                        <li>Once this entire procedure is done, one can then proceed and collect the keys from the security guard.</li>
+                                                        <li>
+                                                            <span class="techno">Technology Stack :</span>
+                                                            <ul class="list-group">
+                                                                <li class="stack"> HTML 5 , CSS 3,Bootstrap 4</li>
+                                                                <li class="stack">JSP and Servlet</li>
+                                                                <li class="stack">MySQL</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Source Code : <a href="https://github.com/pratham19Feb" target="_blank" ><u>Click here</u></a>  </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 pt-sm-auto pt-0 ">
+                                <a  data-dismiss="modal" href="#" class=" btn btn-primary " data-abc="true"> <span >Got it</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modelId-ERP" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                        <div class="modal-dialog px-2  modal-dialog-centered justify-content-center" role="document">
+                            <div class="modal-content">
+                                  
+                                <div class="modal-body p-0 m-0">
+                                    <div class="container-fluid px-0 mx-0 pb-0 mb-0">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="card border-0">
+                                                    <div class="card-body pb-0">
+                                                        <h5 class="text-center font-weight-bold my-sm-4 my-3" ><b> Enterprise Resource Planning </b>  </h5>
+                                                       
+                                                       
+                                                        <ul>
+                                                            <li>Designed and created for small scale mechanical industries by automizing the inter-administration communication.</li>
+                                                            <li>Demonstrated the ability to work diligently under pressure to meet deadlines.</li>
+                                                            <li>Excelled in user experience and user interfaces.</li>
+                                                            <li>
+                                                                    <span class="techno">Technology Stack :</span>
+                                                                    <ul class="list-group">
+                                                                        <li class="stack"> HTML 5 , CSS 3,Bootstrap 4</li>
+                                                                        <li class="stack">Django</li>
+                                                                        <li class="stack">MongoDB</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>Source Code : <a href="https://github.com/pratham19Feb" target="_blank" ><u>Click here</u></a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer border-0 pt-sm-auto  m-sm-3 pt-0 m-sm-3">
+                                        <a  data-dismiss="modal" href="#" class=" btn btn-primary  " data-abc="true"> <span >Got it</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </section>
 
@@ -1656,7 +1948,7 @@
             <div class="card-deck ">
                 <div class=" card col-auto  mx-md-3 text-center border-0 pb-4">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://i.imgur.com/hafu1IQ.png" width="110" height="110"> </div>
+                        <div class="col"> <img class="align-self-center text-center rounded-circle outside img-fluid a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpOQsykaLBpQ72Ckc2I8SMNjRLzRgBqAGTRQWpAZxTeNnZnnHo" width="110" height="110"> </div>
                     </div>
                     <div class="row text-center card-name">
                         <div class="col ">
@@ -1667,7 +1959,7 @@
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
                             <div class="col  px-xl-3 px-2">
-                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                                <p class="bold">I delivers highly effective responsive web designs that ensure optimal viewing experience by making your website get loaded and function seamlessly on all the devices.Talking about the prices, I provide you the best and feature-rich designs at just pocket-friendly rates making sure that you get the best value for your money. </p>
                             </div>
                         </div>
                     </div>
@@ -1685,7 +1977,7 @@
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
                             <div class="col  px-xl-3 px-2">
-                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                                <p class="bold">If you’re looking for custom Internet applications or complex web development solutions, you’ve come to the right place.I have a great UI/UX experience that enables you to find the right theme for your website.I can help you stand out from the crowd and reach your target audience. </p>
                             </div>
                         </div>
                     </div>
@@ -1696,14 +1988,14 @@
                     </div>
                     <div class="row card-name">
                         <div class="col ">
-                            <h5 class="mb-4 text-center"><span  class=" seo">SEO</span><small class="upcoming">( upcoming )</small> </h5> 
+                            <h5 class="mb-4 text-center"><span  class=" seo">SEO</span> </h5> 
                             <hr class="heading-line mb-4">
                         </div>
                     </div>
                     <div class="card-body pt-0 text-center pb-3 ">
                         <div class="row justify-content-center ">
                             <div class="col  px-xl-3 px-2">
-                                <p class="bold">  insight that matter was challenginglity to get true insight that matter was challenging ponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action </p>
+                                <p class="bold">An effective online presence for our business is always critical for its success. And nothing is more critical to an effective website than search engine rankings with higher rankings driving increased traffic and profitability. As your long-term growth partner, I review and optimize your campaigns every month, adjusting to continuously improve the quality and quantity of lead flow.</p>
                             </div>
                         </div>
                     </div>
@@ -1717,7 +2009,7 @@
             <div class="col ">
        <div class="row ">
             <div class="col text-center">
-                <span class="badge badge-pill badge-primary mb-3">My Snippets</span><br>
+                <span class="badge badge-pill badge-primary mb-3">Selected Work</span><br>
                 <h2 class="services-line mx-auto mb-3 ">What I Did</h2>
             </div>
         </div> 
@@ -1797,7 +2089,7 @@
                 </div>
         </div>
             <div class="col-12 m-4">
-                    <a href="bootstrap-snippet" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-sm-3 mr-2  ">View All</span> <i class="fa fa-arrow-right"></i></a> 
+                    <a href="bootstrap-snippet" class="highlight-button btn btn-large button xs-margin-bottom-five px-3 py-3 mt-4 " data-abc="true"> <span class="mr-sm-3 mr-2  view-all">View All</span> <i class="fa fa-arrow-right"></i></a> 
                 </div>
         </div>
         </div>
@@ -1896,17 +2188,9 @@
                 }
             })
     
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                var objectSelect = $(".intro");
-                var objectPosition = objectSelect.offset().top;
-                if (scroll > objectPosition) {
-                    $("nav").addClass("navbar-1");
-    
-                } else {
-                    $("nav").removeClass("navbar-1");
-                }
-            });
+      
+
+       
 
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
