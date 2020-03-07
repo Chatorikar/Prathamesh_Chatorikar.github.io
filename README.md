@@ -1,3 +1,0 @@
-Trying to built...
-
-www.chatorikar.com
