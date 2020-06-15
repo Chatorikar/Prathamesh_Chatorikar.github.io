@@ -328,6 +328,10 @@ nav.navbar.boxshadow {
     color:#fff;
 }
 
+.buttons:hover p {
+    color:#fff;
+}
+
 .navbar-nav li {
     padding: 0 18px;
     margin: 0 -2px;
