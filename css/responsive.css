@@ -1,0 +1,15 @@
+@media (max-width: 991px){
+    .download-button {
+        -webkit-box-direction: normal !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-flex-direction: column !important;
+        -moz-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    }
+    
+    @media (max-width: 991px){
+    .buttons:first-child {
+        margin-bottom: 16px;
+    }
